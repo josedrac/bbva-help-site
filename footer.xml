@@ -80,36 +80,36 @@
 	<div class="footer">
 		<ul>
 			<li class="first op1">
-				<h2>CENTRO DE AYUDA</h2>
+				<h2>HELP</h2>
 				<ul>
-					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes">Preguntas frecuentes</a></li>
-					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/glosario">Glosario</a></li>
-					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/formulario-de-contacto">Danos tu opinión</a></li>					
+					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes">FAQ's</a></li>
+					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/glosario">Glossary</a></li>
+					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/formulario-de-contacto">Share your opinion</a></li>					
 				</ul>
 			</li>
 			<li class="op2">
-				<h2>INFORMACIÓN CORPORATIVA</h2>
+				<h2>CULTURE AND CR</h2>
 				<ul>
-					<li><a target="_blank" href="http://www.fbbva.es/TLFU/tlfu/esp/home/index.jsp">Fundación BBVA</a></li>
+					<li><a target="_blank" href="http://www.fbbva.es/TLFU/tlfu/ing/home/index.jsp">BBVA Foundation</a></li>
 					<li><a target="_blank" href="http://bancaparatodos.com/">Bancaparatodos</a></li>
-					<li><a target="_blank" href="http://www.fundacionmicrofinanzasbbva.org/">Fundación Microfinanzas</a></li>					
+					<li><a target="_blank" href="http://www.mfbbva.org/english.html">Microfinance Foundation</a></li>					
 				</ul>
 			</li>							
 			<li class="op3">
-				<h2>LINKS DE INTERÉS</h2>
+				<h2>USEFUL LINKS</h2>
 				<ul>
-					<li><a target="_blank" href="http://prensa.bbva.com/">Sala de prensa</a></li>					
+					<li><a target="_blank" href="http://prensa.bbva.com/">Press room</a></li>					
 				</ul>
 			</li>
 			<li class="last op4">
-				<h2>BBVA EN REDES SOCIALES</h2>
+				<h2>SOCIAL NETWORKS</h2>
 				<ul class="redes-sociales">
-					<li><a target="_blank" href="http://www.bbvasocialmedia.com/es">Socialmedia</a></li>
-					<li><a target="_blank" href="http://www.bbvasocialmedia.com/es/facebook/">Facebook</a></li>
-					<li><a target="_blank" href="http://www.bbvasocialmedia.com/es/twitter/">Twitter</a></li>
-					<li><a target="_blank" href="http://www.bbvasocialmedia.com/es/google/">Google+</a></li>
-					<!--<li><a target="_blank" href="http://www.bbvasocialmedia.com/es/youtube/">Youtube</a></li>
-					<li><a target="_blank" href="http://www.bbvasocialmedia.com/es/linkedin/">Linkedin</a></li>-->
+					<li><a target="_blank" href="http://www.bbvasocialmedia.com/en">Socialmedia</a></li>
+					<li><a target="_blank" href="http://www.bbvasocialmedia.com/en/facebook/">Facebook</a></li>
+					<li><a target="_blank" href="http://www.bbvasocialmedia.com/en/twitter/">Twitter</a></li>
+					<li><a target="_blank" href="http://www.bbvasocialmedia.com/en/google/">Google+</a></li>
+					<!--<li><a target="_blank" href="http://www.bbvasocialmedia.com/en/youtube/">Youtube</a></li>
+					<li><a target="_blank" href="http://www.bbvasocialmedia.com/en/linkedin/">Linkedin</a></li>-->
 				</ul>
 			</li>				
 		</ul>	
