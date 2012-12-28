@@ -372,7 +372,7 @@
 	 function cargaVideo()
 	 {
 		 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
-		 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
+		 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >View all</a>';
 		 
 		 document.getElementById("tagVideo").innerHTML = tagVideo;
 		 document.getElementById("titleVideo").innerHTML = titleVideo;
