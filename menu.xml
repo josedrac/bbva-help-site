@@ -95,7 +95,6 @@ ol, ul {
 .cabeceramenu ul li.homefirst,
 .cabeceramenu ul li.iniciate,
 .cabeceramenu ul li.apps,
-.cabeceramenu ul li.trucos,
 .cabeceramenu ul li.movilidad{
   float: left;
   text-align: center;
@@ -157,6 +156,9 @@ border-top-right-radius: 5px;
 }
 .cabeceramenu ul li.iniciate{
 	width: 195px;
+}
+.cabeceramenu ul li.trucos{
+	width: 165px;
 }
 
 .cabeceramenu ul li .enlace span{
