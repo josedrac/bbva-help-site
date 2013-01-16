@@ -241,29 +241,29 @@
 	<div class="footer">
 		<ul>
 			<li class="first op1">
-				<h2>CENTRO DE AYUDA</h2>
+				<h2>HELP CENTER</h2>
 				<ul>
-					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes">Preguntas frecuentes</a></li>
-					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/glosario">Glosario</a></li>
-					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/formulario-de-contacto">Danos tu opinión</a></li>					
+					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/preguntas-frecuentes">fAQs</a></li>
+					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/glosario">Glossary</a></li>
+					<li><a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/formulario-de-contacto">Give us your opinion</a></li>					
 				</ul>
 			</li>
 			<li class="op2">
-				<h2>INFORMACIÓN CORPORATIVA</h2>
+				<h2>CORPORATE INFORMATION</h2>
 				<ul>
-					<li><a target="_blank" href="http://www.fbbva.es/TLFU/tlfu/esp/home/index.jsp">Fundación BBVA</a></li>
-					<li><a target="_blank" href="http://bancaparatodos.com/">Bancaparatodos</a></li>
-					<li><a target="_blank" href="http://www.fundacionmicrofinanzasbbva.org/">Fundación Microfinanzas</a></li>					
+					<li><a target="_blank" href="http://www.fbbva.es/TLFU/tlfu/esp/home/index.jsp">BBVA foundation</a></li>
+					<li><a target="_blank" href="http://bancaparatodos.com/">Bankingforall</a></li>
+					<li><a target="_blank" href="http://www.fundacionmicrofinanzasbbva.org/">Microfinance foundation</a></li>					
 				</ul>
 			</li>							
 			<li class="op3">
-				<h2>LINKS DE INTERÉS</h2>
+				<h2>LINKS</h2>
 				<ul>
-					<li><a target="_blank" href="http://prensa.bbva.com/">Sala de prensa</a></li>					
+					<li><a target="_blank" href="http://prensa.bbva.com/">Newsroom</a></li>					
 				</ul>
 			</li>
 			<li class="last op4">
-				<h2>BBVA EN REDES SOCIALES</h2>
+				<h2>BBVA IN SOCIAL NETWORKS</h2>
 				<ul class="redes-sociales">
 					<li><a target="_blank" href="http://www.bbvasocialmedia.com/es">Socialmedia</a></li>
 					<li><a target="_blank" href="http://www.bbvasocialmedia.com/es/facebook/">Facebook</a></li>
