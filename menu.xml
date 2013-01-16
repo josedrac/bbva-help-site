@@ -156,7 +156,7 @@ border-top-right-radius: 5px;
 	width: 81px;
 }
 .cabeceramenu ul li.iniciate{
-	width: 180px;
+	width: 195px;
 }
 
 .cabeceramenu ul li .enlace span{
@@ -174,7 +174,7 @@ margin-top:-19px;
 .cabeceramenu ul li.trucos,  
 .cabeceramenu ul li.movilidad,
 .cabeceramenu ul li.exito {
-	width: 175.75px;
+	width: 170.75px;
 }
 
 .cabeceramenu  ul li.homefirst {
