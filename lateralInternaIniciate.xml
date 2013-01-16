@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="urlsubsecciones.xml"
+  <ModulePrefs title="lateralInternaIniciate.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -17,16 +17,7 @@
 	
 	<style type="text/css">
 	  /* @group fonts */
-@font-face {
-	font-family: 'BBVA Web Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
+
 
 @font-face {
 	font-family: 'BBVA Web Book';
@@ -39,52 +30,67 @@
 	font-weight: normal;
 }
 
-@font-face {
-	font-family: 'BBVA Web Medium';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
-	font-style: normal;
-	font-weight: normal;
-}
+
 
 /* @end */
 	
-	.linedowntitle{
-	margin-bottom:25px;
-	width:619px;
-	display:-moz-stack;
-	}
-	.title{
-	color:#000;
-	font-size: 18px;
-	font-family: BBVA Web Light, BBVA Web, Arial, sans-serif;
-	margin-left:22px;
-	margin-top:0px;
-	margin-bottom:10px;
-	}
-	.subseccion{
-	margin-bottom:30px;
-	}
-	.subseccion li{
-	list-style:none;
-	}
-	.subseccion li a{
-	color:#0065B7;
-	font-size: 12px;
-	font-family: Arial;
-	margin-left:24px;
-	padding-top:4px;
-	text-decoration:none;
-	list-style:none;
-	font-weight: normal;
-	}
+.titulo{
+						border-bottom: 1px solid  #DDE3EA;
+						background: #ffffff;
+						background: -moz-linear-gradient(top,  #ffffff 0%, #f5f7f8 100%);
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f7f8));
+						background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+						background: -o-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+						background: -ms-linear-gradient(top,  #ffffff 0%,#f5f7f8 100%);
+						background: linear-gradient(to bottom,  #ffffff 0%,#f5f7f8 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f7f8',GradientType=0 );
+						font: 16px BBVA Web Book;
+						color: #333333;
+						padding-left: 18px;
+						padding-left: 18px;
+						padding-top: 14px;
+						padding-bottom: 15px;
+					}
+					.caja{
+						border: 1px solid #DDE3EA;
+            border-radius: 2px;
+            -ms-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            width: 298px;
+            clear: both;
+			margin-top:15px;
+					}
+					ul{
+						padding-left: 19px;
+						padding-right: 19px;
+						margin: 0;
+					}
+					ul li{
+						list-style: none;
+						border-bottom: 1px solid #DDE3EA;
+						padding-bottom: 12px;
+						padding-top: 17px;
+					}
+          ul li:last-child{
+						border: 0;
+						padding-bottom: 11px;
+						padding-top: 17px;
+					}     
+					ul li a{
+            padding-left: 2px;
+						vertical-align: 3px;
+						text-decoration: none;
+            font: 12px Arial;
+            font-weight: bold;
+						color: #0073C9;
+					}  
+	
 	</style>
 <script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
-<div id="contenido"></div>
+<div id="content_div" class="caja"></div>
 
   <script type="text/javascript">
 	 var gadgetHelper = null;
@@ -119,12 +125,7 @@
 				
 				for(var i=0;i<filas;i++){
 				    if(subseccion != 'Subsección'){
-					 if(subseccion=="Iníciate en tu Net"){
-					 html +="<div id='titleSubsection' class='title'>¿Qué puedes hacer?</div>";
-					 }
-					 else{
-					 html +="<div id='titleSubsection' class='title'>"+subseccion+"</div>";
-					}
+					//html +="<div id='titleSubsection' class='title'>"+subseccion+"</div>";
 					html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedowntitle' />";
 				    html +="<div id='subsection"+subseccion+"' class='subseccion'></div>";
 					
@@ -132,7 +133,7 @@
 				
 				}
 
-             document.getElementById('contenido').innerHTML += html;
+             document.getElementById('content_div').innerHTML += html;
 			 
 			 gadgetHelper = new google.visualization.GadgetHelper();
 			 var opts = {dataType:'jsonp'};	
@@ -146,14 +147,18 @@
 	        {
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
-				
+				var html="";
 				//alert(filas);
-				
+				html +='<div class=\"titulo\">' + subseccion + '</div>';
+				html +='<ul id=\"botonera\">'; 
 				for(var i=0;i<filas;i++){
 				  //  if(data.getValue(i,7)!=''){ 
-				    document.getElementById('subsection'+subseccion).innerHTML +="<li><a target='_parent' href='"+data.getValue(i,7)+"'>"+data.getValue(i,3)+"</a></li>";
+				    html +="<li><a target='_parent' href='"+data.getValue(i,7)+"'>"+data.getValue(i,3)+"</a></li>";
+					 
 					//}
 				}
+				html +='</ul>'; 
+				document.getElementById('subsection'+subseccion).innerHTML = html;
 			}
 
    </script>

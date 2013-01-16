@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-    <ModulePrefs title="button operation"
+    <ModulePrefs title="button-operation.xml Cajetin botones"
         title_url=""
         height=""
         width="300"
@@ -193,7 +193,7 @@ padding-left: 23px;
 line-height: 17px;
 }
 .btn span {
-font-family: BBVA Web Medium;
+font-family: BBVA Web Medium, Arial, sans-serif;
 font-size: 1.2em;
 display: inline-block;
 margin-left: -1px;
@@ -251,14 +251,14 @@ cursor: pointer;
 				<li>
 					<div id="" class="btn white large icon">
 						<i class="icon-right arrow-right"></i>
-						<span>Contact us</span>
+						<span>Contacta con nosotros</span>
 					</div>
 				</li>
 				
 				<li>
 					<div id="" class="btn white large icon">
 						<i class="icon-right arrow-right"></i>
-						<span>Google Drive</span>
+						<span>Curso Google Drive</span>
 					</div>
 				</li>
 			</ul>
@@ -278,7 +278,8 @@ cursor: pointer;
                         
             function Go(destination)
             {
-				window.parent.location.href = destination;
+				//window.parent.location.href = destination;
+				window.open(destination,'_blank');
 				return false;
 			}
 			

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="singlevideo.xml"
+  <ModulePrefs title="singleVideo.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -57,14 +57,18 @@
 	  	#urlVideo {
 			padding: 20px 10px 20px 10px;
 	  	}
-	  	#TagVideo {
-	    	color: #0078D2;
-	    	font: 18px BBVA Web Book;
-	    	padding-left: 10px;
+	  	#tagVideo {
+	    	color: #434A58;
+			font-size: 12px;
+			font-family: arial;
+			margin-top: 10px;
+			margin-bottom: 5px;
+			padding-left: 15px;
+			font-weight: normal;
 	  	}
       	#titleVideo {
 			color: #0078D2;
-			font: 22px BBVA Web Light;
+			font: 22px BBVA Web Light, BBVA Web, Arial, sans-serif;
 			padding-bottom: 10px;
 			padding-left: 10px;
 			border-bottom: 1px #D1D1D1 solid;
@@ -77,24 +81,22 @@
 			padding-right: 2.4em;
 			float: right;
 			margin-right: 25px;
-			width: 90px;
+			width: 70px;
 			margin-top: 10px;
 		}
 		#urlLink a{
 			float: left;
 			position: relative;
-			top: -1px;
 			margin-right: 0;
 			text-decoration: none;
 			color: white;
-			font: 12px BBVA Web Medium;
-			margin-left: -16px;
-			width: 90px;
+			font: 12px BBVA Web Medium, Arial, sans-serif;
+			margin-left: 4px;
 		}
 		hr {
 	    	margin-top:-5px;
 		}
-		button {
+		#urlLink {
 			background: #0079C1;
 			background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNzljMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDU1OWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
 			background: -moz-linear-gradient(top, #0079C1 0%, #00559D 100%);
@@ -103,13 +105,11 @@
 			background: -o-linear-gradient(top, #0079C1 0%,#00559D 100%);
 			background: -ms-linear-gradient(top, #0079C1 0%,#00559D 100%);
 			background: linear-gradient(to bottom, #0079C1 0%,#00559D 100%);
-			-webkit-border-radius: .3em;
-			-moz-border-radius: .3em;
-			border-radius: .3em;
+			border-radius: 2px;
 			font-size: 10px;
 			text-align: center;
 			vertical-align: middle;
-			height: 3em;
+			height: 18px;
 			padding-left: .9em;
 			padding-right: .9em;
 			border: .1em solid #00559D;
@@ -119,7 +119,7 @@
 			overflow: visible;
 		}
 		
-		button:hover {
+		#urlLink:hover {
 			background: #004C99;
 		}
 		
@@ -130,7 +130,7 @@
 		<div id="titleVideo"></div>
 		<div id="urlVideo"></div>
 		<div id="tagVideo"></div>
-        <button type="button" id="urlLink"/>
+        <div id="urlLink"/>
 	</div>
 	 
 	
@@ -145,7 +145,7 @@
 	 
 		document.getElementById("tagVideo").innerHTML = tagVideo;
 		document.getElementById("titleVideo").innerHTML = titleVideo;
-		document.getElementById("urlLink").innerHTML = '<a target="_parent" href="' + urlLink + '">More</a>';
+		document.getElementById("urlLink").innerHTML = '<a target="_parent" href="' + urlLink + '">Saber más</a>';
 		document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';   //'<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed>';
   	</script>
     ]]>
@@ -166,7 +166,7 @@
 	<table width="100%" border="0" id="tablaconfig">  
 		<tr>       
         	<td>
-            	Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__" onchange="registra('tagVideo')"/>                   
+            	Texto - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__" onchange="registra('tagVideo')"/>                   
 			</td>
 		</tr>
 		<tr>       

@@ -173,7 +173,7 @@
 	#titleHome h2{
 		color: #0078D2;
 		font-size: 22px;
-		font-family: BBVA Web Light;
+		font-family: BBVA Web Light, Arial, sans-serif;
 		padding-left:10px;	
 		margin-top:0px;
 		padding-bottom:5px;
@@ -209,9 +209,9 @@
 	</style>
 	<body onload="cargaCompleta()">	
 <div id="content">
-	<div id="titleHome"><h2>Mobility</h2></div>
+	<div id="titleHome"><h2>Movilidad</h2></div>
 	<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png" class="linedowntitle" />
-	<div id="textMovilidad">Configuration Guides: </div>
+	<div id="textMovilidad">Guías de configuración, según dispositivo: </div>
 	<div id="dispositivos"></div>
 </div>		
 <!-- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>

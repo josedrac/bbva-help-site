@@ -59,7 +59,7 @@
 		#titlecomboVideo h2{
 		float:left;
 		color:#0078D2;
-		font-family:BBVA Web Light;
+		font-family:BBVA Web Light, BBVA Web, Arial, sans serif;
 		font-size:22px;
 		margin:31px 0px 10px 35px;
 		font-weight: normal;
@@ -106,6 +106,15 @@
 	  width:238px;
 	  margin: 0 0 20px 7px;
 	  font-weight: normal;	  
+	  }
+	  #titleVideo a,
+	  #titleVideo2 a{
+	  color:#0078D2;
+	  font-family:BBVA Web Book;
+	  font-size:18px;
+	  width:238px;
+	  font-weight: normal;
+	  text-decoration:none;
 	  }
 	  
 	  #textVideo,
@@ -329,9 +338,12 @@
 			   html += "<div id='comboVideo'>";
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
-			  
+			   if(data.getValue(i,10)!=""){
 			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
-			   html += "<div id='titleVideo'>"+data.getValue(i,1)+"</div>";
+			   }else{
+			   html += "<img src='"+data.getValue(i,11)+"'></img></div>";
+				}
+			   html += "<div id='titleVideo'><a target='_parent' href='https://sites.google.com/a/bbva.com/portaldeayuda/caso-de-exito?exito="+data.getValue(i,0)+"'>"+data.getValue(i,1)+"</a></div>";
 			   html += "<div id='dateVideo'>"+data.getValue(i,2).toString()+" - </div>";
 			   html += "<div id='userVideo'> "+data.getValue(i,5)+"</div>";
 			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";

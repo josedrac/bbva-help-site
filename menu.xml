@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
  <Module>
-  <ModulePrefs title="menu Ayuda"
+  <ModulePrefs title="menu.xml"
   height="75">
   <Require feature="dynamic-height"/> 
 	<Require feature="idi"/>
 	<Require feature="locked-domain" />	
 	<Require feature="setprefs" />  
   </ModulePrefs> 
+  
  <Content type="html">
  <![CDATA[ 
- 
-  <style type="text/css" > 
+
+  <style type="text/css">
+  
   /* @group fonts */
 @font-face {
 	font-family: 'BBVA Web Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
-	font-style: normal;
-	font-weight: normal;
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+			src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+				url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+			font-style: normal;
+			font-weight: normal;
 }
 
 @font-face {
@@ -36,11 +38,11 @@
 
 @font-face {
 	font-family: 'BBVA Web Medium';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+	src:url('https://sites.google.com/a/bbva.com/portaldeayuda/web-medium.eot?attredirects=0&d=1');
+	src:url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+		url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+		url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+		url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -80,7 +82,7 @@ ol, ul {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#00529b',GradientType=0 );
 	*/
 	position: relative;
-	font-family: BBVA Web Medium;
+	font-family: BBVA Web Medium, Arial, sans-serif;
 	font-weight: normal;
 	text-align: center;
 }
@@ -93,6 +95,7 @@ ol, ul {
 .cabeceramenu ul li.homefirst,
 .cabeceramenu ul li.iniciate,
 .cabeceramenu ul li.apps,
+.cabeceramenu ul li.trucos,
 .cabeceramenu ul li.movilidad{
   float: left;
   text-align: center;
@@ -142,7 +145,7 @@ border-top-right-radius: 5px;
   color: #FFF;
   cursor: pointer;
   text-decoration:none;
-  font-family: BBVA Web Medium;
+  font-family: BBVA Web Medium, Arial, sans-serif;
   font-size:14px;
   font-style:normal;  
 }
@@ -162,10 +165,11 @@ margin-top:-19px;
 }
 
 .cabeceramenu ul li.iniciate, 
-.cabeceramenu ul li.apps, 
+.cabeceramenu ul li.apps,
+.cabeceramenu ul li.trucos,  
 .cabeceramenu ul li.movilidad,
 .cabeceramenu ul li.exito {
-	width: 219.75px;
+	width: 175.75px;
 }
 
 .cabeceramenu  ul li.homefirst {
@@ -191,28 +195,32 @@ margin-top:-19px;
 	margin-right: 5px;
 	color: #003F8C;
 	font-size: 12px;
-	font-family: BBVA Web Book;
+	font-family: BBVA Web Book, BBVA Web, Arial, sans-serif;
 }
 
 .bloqueEnlaces a.enlaceMenu {
 	text-decoration: none;
 	color:  #8B9098;
 	font-size: 12px;
-	font-family: BBVA Web Light;
+	font-family: BBVA Web Light, BBVA Web, Arial, sans-serif;
 	font-weight: normal;
+	
 }
+
 </style>
+
 <div class="bloqueEnlaces">
-English | <a target="_parent" href="https://sites.google.com/a/bbva.com/portaldeayuda/" class="enlaceMenu">Español</a>
+Español | <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site/" class="enlaceMenu">English</a>
 </div>
 <div class="cabeceramenu">
   <ul> 
   
-	<li id="home" class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/help-site/" target="_parent"  title="home"/></li>
-	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/iniciate"  target="_parent">Get started on your NET</a></span></span></li>
-	<li id="googleapps" class="apps"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/google-apps"  target="_parent">Google Apps</a></span></span></li>
-	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/movilidad"  target="_parent">Mobility</a></span></span></li> 
-	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/casos-de-exito"  target="_parent" >Case Studies</a></span></span></li> 
+	<li id="home" class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/portaldeayuda/home"   target="_parent"  title="home"/></li>
+	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate"  target="_parent">Iníciate en tu NET</a></span></span></li>
+	<li id="googleapps" class="apps"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps"  target="_parent">Google Apps</a></span></span></li>
+	<li id="trucosyconsejos" class="trucos"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos"  target="_parent">Tips</a></span></span></li>
+	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad"  target="_parent">Movilidad</a></span></span></li> 
+	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito"  target="_parent" >Casos de &eacute;xito</a></span></span></li> 
   </ul>    
 </div>
 
@@ -221,16 +229,18 @@ English | <a target="_parent" href="https://sites.google.com/a/bbva.com/portalde
 	document.getElementById('home').onclick = function(){ Go('home');};
 	document.getElementById('inicio').onclick = function() {Go('inicio');};
 	document.getElementById('googleapps').onclick = function() {Go('googleapps');};
+	document.getElementById('trucosyconsejos').onclick = function() {Go('trucosyconsejos');};
 	document.getElementById('movilidad').onclick = function() {Go('movilidad');};
 	document.getElementById('exito').onclick = function (){Go('exito');};
 	
 	function Go(destination)
 	{
-		if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/home";}
-		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/iniciate";}
-		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/google-apps";}
-		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/movilidad";}
-		else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/casos-de-exito";}
+		if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/home";}
+		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/iniciate";}
+		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/google-apps";}
+		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/trucosyconsejos";}
+		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/movilidad";}
+		else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/casos-de-exito";}
 		
 		return false;
 	}
@@ -260,6 +270,11 @@ English | <a target="_parent" href="https://sites.google.com/a/bbva.com/portalde
 		if(parametros.indexOf("google-apps")!=-1){
 			document.getElementsByClassName("apps")[0].style.backgroundColor = "rgb(0, 80, 152)";
 			document.getElementsByClassName("apps")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+		
+		}
+		if(parametros.indexOf("trucosyconsejos")!=-1){
+			document.getElementsByClassName("trucos")[0].style.backgroundColor = "rgb(0, 80, 152)";
+			document.getElementsByClassName("trucos")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 		
 		}
 		if(parametros.indexOf("iniciate")!=-1){

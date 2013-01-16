@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="soporte.xml"
+  <ModulePrefs title="footer-bottom.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -8,13 +8,27 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-<UserPref name="titlepage" display_name="Title of page" required="true" />  
-<UserPref name="textPage" display_name="Text of page" required="true" /> 
+
+<UserPref name="titleSeguridad" display_name="Text of Security" required="true" /> 
+<UserPref name="linkSeguridad" display_name="Link of Security" required="true" /> 
+<UserPref name="titleAviso" display_name="Text of Aviso" required="true" /> 
+<UserPref name="linkAviso" display_name="Link of Aviso" required="true" /> 
+<UserPref name="titleTarifas" display_name="Text of Tarifas" required="true" /> 
+<UserPref name="linkTarifas" display_name="Link of Tarifas" required="true" /> 
+
+
+
+
  <Content type="html">
+
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+	<head>
+	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/reset.css" media="all">
+	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/styles-personas.css" media="all">
+	<link rel="stylesheet" type="text/css" href="https://bbvaportaldeayuda.googlecode.com/svn/trunk/css/buttons.css" media="all">
 	
+	</head>
 	<style type="text/css">
 	  /* @group fonts */
 @font-face {
@@ -122,115 +136,112 @@
 
 /* @end */
 	
-	#titlepage{
-	float:left;
-	color:#0078D2;
-	font-family: BBVA Web Light;
-	font-size:30px;
-	margin-bottom:6px;
-	padding-top:11px;
-	height:30px;
-	margin-left:11px;
-	}
-	
-	.linedowntitle{
-	margin-bottom:20px;
-	width:939px;
-	display:block;
-	}
-	.linedownheadertable{
-	margin-bottom:45px;
-	width:690px;
-	display:block;
-	}
-	
-	#textPage{
-	margin:0 0 90px 15px;
-	width:675px;
-	height:57px;
-	font-family: Arial;
-	font-size:12px;
-	color:#71777F;	
-	padding-top:11px;
-	line-height:17px;
-	clear:left;
-	display:block;
-	}
-	.tablasoporte{
-	width:675px;
-	font-family:Arial;
-	font-size:12px;
-	color:#434a45;
-	margin-top:-22px;
-	margin-left:13px;
-	
-	}
-	.tablasoporte td{
-	width:250px;
-	padding-bottom:2px;
-	color:#434A58;
-	}
-	
-	.cabecera td{
-	font-family:BBVA Web Light;
-	font-size:18px;
-	color:#434a45;
-	//padding-bottom:35px;
-	
-	
+
 	}
 	
 	</style>
-	
-<div id="titlepage"></div>
-<img src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png" class="linedowntitle" />
-<div id="textPage"></div>
-<div id="infosoporte"></div>	
+
+<footer class="footer-bottom">
+		
+		<span class="copyright">Banco Bilbao Vizcaya Argentaria S.A.</span>
+</footer>
 	
    <script type="text/javascript">
+  
 	 var gadgetHelper = null;
-	 var prefs = new _IG_Prefs();
-	 var urlTable = prefs.getString("_table_query_url");
-	 var titlepage = prefs.getString("titlepage");
-	 var textPage = prefs.getString("textPage");
+	 var prefs = new gadgets.Prefs();
 	 
-	 document.getElementById("titlepage").innerHTML = titlepage;
-	 document.getElementById("textPage").innerHTML = textPage;
-	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
-	 function loadVisualizationAPI() 
-			{
-				google.load("visualization", "1", {"packages": ["table"]});
-				google.setOnLoadCallback(sendQuery);
-			}
-	 function sendQuery() 
-			{
-				gadgetHelper = new google.visualization.GadgetHelper();
-				var opts = {dataType:'jsonp'};		
-				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select *";
-				query.setQuery(querytosend);			  
-				query.send(handleQueryResponse);
-				
-				
-			}
-	 function handleQueryResponse(response) {
-				data = response.getDataTable();	
-				var filas = data.getNumberOfRows();
-				var html= "";
-				html += "<table class='tablasoporte'>";
-				html += "<tr class='cabecera'><td>Pa&iacute;s</td><td style='padding-left:33px;'>Correo</td><td style='padding-left:46px;'>Tel&eacute;fono</td><td style='width:300px;'>Horario de atenci&oacute;n</td></tr><tr/></table>";
-			    html += "<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='linedownheadertable' /><table class='tablasoporte'>";
-				for(var i=1;i<filas;i++){
-					html += "<tr><td>"+data.getValue(i,0)+"</td><td>"+data.getValue(i,1)+"</td><td>"+data.getValue(i,2)+"</td><td>"+data.getValue(i,3)+"</td></tr>";
+	 var titleSeguridad = prefs.getString("titleSeguridad");
+	 var linkSeguridad = prefs.getString("linkSeguridad");
+	 
+	 var titleAviso = prefs.getString("titleAviso");
+	 var linkAviso = prefs.getString("linkAviso");
+	 
+	 var titleTarifas = prefs.getString("titleTarifas");
+	 var linkTarifas = prefs.getString("linkTarifas");
+	 	 
+	 
+	 var html="";
+	 html += "<ul><li><a href='"+linkSeguridad+"'>"+titleSeguridad+"</a></li>";
+	 html += "<li><a href='"+linkAviso+"'>"+titleAviso+"</a></li>";
+	 html += "<li><a href='"+linkTarifas+"'><span>"+titleTarifas+"</span></a></li></ul>";
+	 document.getElementsByClassName("footer-bottom")[0].innerHTML += html;
+	 
+
+	 
+	 
 	
-				}
-				html += "</table>";
-		document.getElementById('infosoporte').innerHTML += html;
-	
-		}
    </script>
    
     ]]>
   </Content>
-  
+  <Content type="html" view="configuration" preferred_height="480">
+
+<![CDATA[
+<style type="text/css">
+    
+	table td {
+				color: #000;
+				font-size: 11px;
+				font-weight: bold;
+			}
+  </style>
+  <table width="100%" border="0" id="tablaconfig">  
+		
+			<tr>       
+                <td>
+                    Title -Seguridad: <input type="text" size="100" id="titleSeguridad" value="__UP_titleSeguridad__"   onchange="registra('titleSeguridad')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Link -Seguridad: <input type="text" size="100" id="linkSeguridad" value="__UP_linkSeguridad__"   onchange="registra('linkSeguridad')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Text -Aviso: <input type="text" size="100" id="titleAviso" value="__UP_titleAviso__"   onchange="registra('titleAviso')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Link -Aviso: <input type="text" size="100" id="linkAviso" value="__UP_linkAviso__"   onchange="registra('linkAviso')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Text -Tarifas: <input type="text" size="100" id="titleTarifas" value="__UP_titleTarifas__"   onchange="registra('titleTarifas')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Link -Tarifas: <input type="text" size="100" id="linkTarifas" value="__UP_linkTarifas__"   onchange="registra('linkTarifas')"/>                   
+                </td>
+            </tr>
+			
+			
+			
+			
+			
+	</table>	
+
+    <script type="text/javascript">           
+            // Get userprefs
+            var prefs = new gadgets.Prefs();           
+            function registra(variable)
+            {	
+				
+                prefs.set(variable,document.getElementById(variable).value);
+				
+			
+            } 
+			gadgets.window.adjustHeight();
+    </script>   	
+
+	  
+
+	 
+ ]]>	
+
+ </Content>
 </Module>

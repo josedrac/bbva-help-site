@@ -9,14 +9,12 @@
 	<Require feature="setprefs" />   
   </ModulePrefs>
 <UserPref name="Urlall" display_name="Url page all videos" required="true" />  
-<UserPref name="titlecomboVideo" display_name="Tilte Box Video" required="true" /> 
-<UserPref name="imgTag" display_name="Image Tag Video" required="true" />     
+<UserPref name="titlecomboVideo" display_name="Tilte Box Video" required="true" />    
 <UserPref name="tagVideo" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo" display_name="Title Video" required="true" />
 <UserPref name="textVideo" display_name="Text Video" required="true" />
 <UserPref name="urlsabermas" display_name="Url Saber más" required="true" />
 <UserPref name="urlVideo" display_name="Url Video" required="true" />
-<UserPref name="imgTag2" display_name="Image Tag Video2" required="true" />
 <UserPref name="tagVideo2" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo2" display_name="Title Video" required="true" />
 <UserPref name="textVideo2" display_name="Text Video" required="true" />
@@ -52,11 +50,6 @@
 			<tr/>
 			<tr>       
                 <td>
-                    Img - Tag: <input type="text" size="100" id="imgTag" value="__UP_imgTag__"   onchange="registra('imgTag')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
                     Tag - Video: <input type="text" size="100" id="tagVideo" value="__UP_tagVideo__"   onchange="registra('tagVideo')"/>                   
                 </td>
             </tr>
@@ -85,11 +78,6 @@
                 <td>
                 Text - Video: <textarea id="textVideo" style="height: 245px; width: 100%" onchange="registra('textVideo')" >__UP_textVideo__</textarea>
                
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Img - Tag2: <input type="text" size="100" id="imgTag2" value="__UP_imgTag2__"   onchange="registra('imgTag2')"/>                   
                 </td>
             </tr>
 			<tr>       
@@ -189,7 +177,7 @@
 		#titlecomboVideo h2{
 			float:left;
 			color:#0078D2;
-			font-family:BBVA Web Light, Arial, sans-serif;
+			font-family:BBVA Web Light;
 			font-size:22px;
 			margin:15px 0px 10px 22px;
 			font-weight: normal;
@@ -217,17 +205,13 @@
 			margin-top:5px;
 			display:block;
 		  }
-		  #TagVideo img,
-		  #TagVideo2 img{
-		   float:left;
-		   margin:-4px 10px 0px 0px;
-		  }
+		  
 		  #TagVideo{
 		   color:#000;
 		   margin-bottom:11px;
 		   margin-left:11px;
 		   margin-top:-7px;
-			font-family: 'BBVA Web Light', Arial, sans-serif;
+			font-family: 'BBVA Web Light';
 			font-weight: normal;
 		  }
 		  
@@ -236,18 +220,17 @@
 			margin-bottom:11px;
 			margin-left: 11px;
 			margin-top: -13px;
-			font-family: 'BBVA Web Light', Arial, sans-serif;
+			font-family: 'BBVA Web Light';
 			font-weight: normal;
 		  }
 		  
-	      #titleVideo a,
-	      #titleVideo2 a{
+	      #titleVideo,
+	      #titleVideo2 {
 			  color:#0078D2;
-			  font-family:BBVA Web Book, Arial, sans-serif;
+			  font-family:BBVA Web Book;
 			  font-size:18px;
 			  width:248px;
 			  margin: 0 0 20px 0px;  
-			  text-decoration:none;
 		  }
 		 
 		  #textVideo,
@@ -295,7 +278,7 @@
 			margin-right: 0;
 			text-decoration:none;
 			color:#FFF;
-			font-family: BBVA Web Medium, Arial, sans-serif;
+			font-family: BBVA Web Medium;
 			font-size:14px;
 		}
 		#allcontent2{
@@ -318,7 +301,7 @@
 			margin-right: 0;
 			text-decoration:none;
 			color:#FFF;
-			font-family: BBVA Web Medium, Arial, sans-serif;
+			font-family: BBVA Web Medium;
 			font-size:12px;
 			margin-left:-16px;
 			width:90px;
@@ -458,10 +441,6 @@
 	 var urlVideo = prefs.getString("urlVideo");
 	 var tagVideo = prefs.getString("tagVideo");
 	 var urlsabermas = prefs.getString("urlsabermas");
-	 var imgTag = prefs.getString("imgTag");
-	 var imgTag2 = prefs.getString("imgTag2");
-	 
-	 
 	 
 	 
 	 var titleVideo2 = prefs.getString("titleVideo2");
@@ -476,15 +455,15 @@
 		 document.getElementById("titlecomboVideo").innerHTML = '<h2>'+titlecomboVideo+'</h2>';
 		 document.getElementById("allcontent").innerHTML = '<a href="'+Urlall+'" target="_parent" >Ver todos</a>';
 		 
-		 document.getElementById("tagVideo").innerHTML = "<img src='"+imgTag+"'/>"+ tagVideo;
-		 document.getElementById("titleVideo").innerHTML ="<a href='"+urlsabermas+"'>"+ titleVideo +"</a>";
+		 document.getElementById("tagVideo").innerHTML = tagVideo;
+		 document.getElementById("titleVideo").innerHTML = titleVideo;
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("sabermas").innerHTML  ="<button type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas+"'>Saber más</a></button>"
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 
-		 document.getElementById("tagVideo2").innerHTML = "<img src='"+imgTag2+"'/>"+ tagVideo2;
-		 document.getElementById("titleVideo2").innerHTML = "<a href='"+urlsabermas2+"'>"+ titleVideo2 +"</a>";
+		 document.getElementById("tagVideo2").innerHTML = tagVideo2;
+		 document.getElementById("titleVideo2").innerHTML = titleVideo2;
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent2'><a target='_parent' href='"+urlsabermas2+"'>Saber más</a></button>"
 		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="etiquetas.xml"
+  <ModulePrefs title="etiquetasBasico.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -8,9 +8,11 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-
- <Content type="html">
+<UserPref name="urlTableguias" default_value="" display_name="Data source url guias(Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="urlTablecontenidos" default_value="" display_name="Data source url contenidos  (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="urlTableexitos" default_value="" display_name="Data source url exitos (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+<UserPref name="urlTablemovilidad" default_value="" display_name="Data source url movilidad (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+ <Content type="html" charset="UTF-8">
     <![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 	
@@ -124,7 +126,7 @@
 	#nivel{
 	
 	color:#0078D2;
-	font-family: BBVA Web Medium;
+	font-family: BBVA Web Light;
 	font-size:22px;
 	margin-bottom:6px;
 	padding-top:23px;
@@ -149,19 +151,23 @@
 	width:690px;
 	display:block;
 	}
-	
-    #titleproduct{
+	#titleproduct{
+	margin-bottom:10px;
+	}
+  
+	#titleproduct a{
 	color:#0078D2;
 	font-size:16px;
-	font-family: Stag;
+	font-family: BBVA Web Book;
 	margin-left:14px;
 	margin-bottom:10px;
+	text-decoration:none;
 	}
 	#textproduct{
 	color:#434A58;
 	font-size:14px;
-	font-family: Stag;
-    width:626px;	
+	font-family: Arial;
+    width:600px;	
 	margin-left:14px;
 	margin-bottom:10px;
 	}
@@ -199,18 +205,18 @@
 
   #bloqueEnlaces1 img{
             
-			margin-left:260px;
+			//margin-left:260px;
 			padding-right:10px;
         }
 	#etiquetas{
-	width:620px;
+	width:651px;
 	}
 	.checkpage{
     margin-top:-5px;
 	}	
 	.checkpage1{
     margin-top:-5px;
-	margin-left:260px;
+	//margin-left:260px;
 	}	
 	.checkpage a{
 	height:9px;
@@ -236,17 +242,23 @@
    <script type="text/javascript">
 	 var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
-	 var urlTable = prefs.getString("_table_query_url");
-	 var etiquetasnivel = gadgets.util.getUrlParameters()["parent"];
-	 if (etiquetasnivel.indexOf('basico')!=-1){
-	 document.getElementById('nivel').innerHTML = "Básico";
-	 }
-     else if (etiquetasnivel.indexOf('medio')!=-1){
-	 document.getElementById('nivel').innerHTML = "Medio";
-	 }
-	 else{
-	 document.getElementById('nivel').innerHTML = "Avanzado";
-	 }
+	 
+	 var urlTableguias = prefs.getString("urlTableguias");
+	 var urlTablecontenidos = prefs.getString("urlTablecontenidos");
+	 var urlTableexitos = prefs.getString("urlTableexitos");
+	 var urlTablemovilidad = prefs.getString("urlTablemovilidad");
+	 var tag = gadgets.util.getUrlParameters()["parent"].split("=");
+	 var TotalFilas = 0;
+	 var aux = new Array();
+	 var auxtexto = new Array();
+	 var auxurl = new Array();
+	 var auxsubsection = new Array();
+	 var tagAux = "";
+	 tag[1]=tag[1].replace(/\+/g,' ');
+	 tagAux = decodeURIComponent(tag[1]);
+	 
+	 document.getElementById('nivel').innerHTML = tagAux;
+	 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
@@ -257,16 +269,9 @@
 			{
 				gadgetHelper = new google.visualization.GadgetHelper();
 				var opts = {dataType:'jsonp'};		
-				var query = new google.visualization.Query(urlTable, opts);	
-				//var querytosend = "select * where B like 'Básico'";
-				
-			    if(etiquetasnivel.indexOf('basico')!=-1){
-				var querytosend = "select * where B like 'Básico'";
-				}else if (etiquetasnivel.indexOf('medio')!=-1){
-				var querytosend = "select * where B like 'Medio'";
-				}else{
-				var querytosend = "select * where B like 'Avanzado'";
-				}
+				var query = new google.visualization.Query(urlTableguias, opts);					
+			   
+				var querytosend = "select D,H,J,C where (I like '%"+tagAux+"%') or (E like '%"+tagAux+"%') or (F like '%"+tagAux+"%')";
 				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
@@ -276,26 +281,145 @@
 	 function handleQueryResponse(response) {
 				data = response.getDataTable();	
 				var filas = data.getNumberOfRows();
-				var pagTotales = Math.ceil(filas/3);
+				TotalFilas +=filas;
+				var titulo = new Array();
+				var texto = new Array(); 
+				var url = new Array();  
+				var subsection="";
+				
+				for(var i=0;i<filas;i++){
+				   
+				   titulo[i] = data.getValue(i,0);
+				   texto[i]= data.getValue(i,2);
+				   url[i] = data.getValue(i,1);
+				   subsection = data.getValue(i,3);
+					  if(aux.indexOf(titulo[i])== -1){ 
+							aux += titulo[i]+"|";
+							auxtexto[titulo[i]]= texto[i];
+							auxurl[titulo[i]]= url[i];
+						    aux[titulo[i]]= subsection;
+						}else if((aux.indexOf(titulo[i])!= -1)&&(aux[titulo[i]]!=subsection)){
+							aux += titulo[i]+"|";
+							auxtexto[titulo[i]]= texto[i];
+							auxurl[titulo[i]]= url[i];
+						    aux[titulo[i]]= subsection;
+						}
+					 }
+				var opts = {dataType:'jsonp'};
+				var querycontenidos = new google.visualization.Query(urlTablecontenidos, opts);	
+			    var querytosendcontenidos = "select B,Q,D where (E like '%"+tagAux+"%') or (K like '%"+tagAux+"%') or (L like '%"+tagAux+"%')";
+				querycontenidos.setQuery(querytosendcontenidos);	
+				querycontenidos.send(handleQueryResponse2); 
+			}
+			
+	  function handleQueryResponse2(response) {
+				data = response.getDataTable();	
+				var filas = data.getNumberOfRows();
+				TotalFilas +=filas;
+				var titulo = new Array();
+				var texto = new Array(); 
+				var url = new Array(); 
+				
+				
+				for(var i=0;i<filas;i++){
+				   
+				   titulo[i] = data.getValue(i,0);
+				   texto[i]= data.getValue(i,2);
+				   url[i] = data.getValue(i,1);
+					  if(aux.indexOf(titulo[i])== -1){ 
+							aux += titulo[i]+"|";
+							auxtexto[titulo[i]]= texto[i];
+							auxurl[titulo[i]]= url[i];
+						
+						}else if((aux.indexOf(titulo[i])== -1)&&(aux[titulo[i]]!=subsection)){
+							aux += titulo[i]+"|";
+							auxtexto[titulo[i]]= texto[i];
+							auxurl[titulo[i]]= url[i];
+						    aux[titulo[i]]= subsection;
+						}
+					 }
+				var opts = {dataType:'jsonp'};
+				var querycontenidos = new google.visualization.Query(urlTableexitos, opts);	
+			    var querytosendcontenidos = "select B,O,D where N like '%"+tagAux+"%'";
+				querycontenidos.setQuery(querytosendcontenidos);	
+				querycontenidos.send(handleQueryResponse3); 
+			}	
+		 function handleQueryResponse3(response) {
+				data = response.getDataTable();	
+				var filas = data.getNumberOfRows();
+				TotalFilas +=filas;
+				var titulo = new Array();
+				var texto = new Array(); 
+				var url = new Array();  
+				
+				
+				for(var i=0;i<filas;i++){
+				   
+				   titulo[i] = data.getValue(i,0);
+				   texto[i]= data.getValue(i,2);
+				   url[i] = data.getValue(i,1);
+					  if(aux.indexOf(titulo[i])== -1){ 
+							aux += titulo[i]+"|";
+							auxtexto[titulo[i]]= texto[i];
+							auxurl[titulo[i]]= url[i];
+						
+						}
+					 }
+				var opts = {dataType:'jsonp'};
+				var querycontenidos = new google.visualization.Query(urlTablemovilidad, opts);	
+			    var querytosendcontenidos = "select G,F,I where H  like '%"+tagAux+"%'";
+				querycontenidos.setQuery(querytosendcontenidos);	
+				querycontenidos.send(handleQueryResponse4); 
+			}		
+		function handleQueryResponse4(response) {
+				data = response.getDataTable();	
+				var filas = data.getNumberOfRows();
+				TotalFilas +=filas;
+				var titulo = new Array();
+	            var texto = new Array(); 
+				var url = new Array();  
+				
+				
+				for(var i=0;i<filas;i++){
+				   
+				   titulo[i] = data.getValue(i,0);
+				   texto[i]= data.getValue(i,2);
+				   url[i] = data.getValue(i,1);
+					  if(aux.indexOf(titulo[i])== -1){ 
+							aux += titulo[i]+"|";
+							auxtexto[titulo[i]]= texto[i];
+							auxurl[titulo[i]]= url[i];
+						
+						}
+					 }
+				mostrar()
+			}
+	function mostrar(){
+	            var aux1= aux.split("|");
+				//console.debug(aux1.length);
+	            var filas = aux1.length-1;
+				var pagTotales = Math.ceil(filas/5);
 				var pagActual = 1;
 				var html = "";
 				
+				
+				
 				if(filas<1)
 					{
-						html += '<p class="text">No hay ningún contenido con este Nivel.</p>';
+						html += '<p class="text">No hay ning�n contenido con este Nivel.</p>';
 					}
 				else
 					{               
 						html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
 					}
 				for(var i=0;i<filas;i++){
-				 html +="<div id='titleproduct'>"+data.getValue(i,0)+"</div>";  
-				 html +="<div id='textproduct'>"+data.getValue(i,3)+"</div>";
+				 html +="<div id='titleproduct'><a target='_parent' href='"+auxurl[aux1[i]]+"'>"+aux1[i]+"</a></div>";  
+				 html +="<div id='textproduct'>"+auxtexto[aux1[i]]+"</div>";
 				 html +="<img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineproduct' />";
 				   
 				   if(pagTotales>1){
 			     
-				  if (i==3*pagActual-1){
+				  if (i==5*pagActual-1){
 				  
 				    var pagActualParaMostrar = pagActual+1;
                     var pagSiguiente = pagActualParaMostrar+1;
@@ -348,10 +472,10 @@
 				
 		document.getElementById('etiquetas').innerHTML += html;
 	
-		}
 		
-		
-	 function continuacion(num)
+	}
+	
+	function continuacion(num)
         {           
             var bloque = "pagina"+num;
             var numInt = parseInt(num)-1;
@@ -403,7 +527,8 @@
 		    document.getElementById('pagination'+old).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/paginaHover.png";
 		}	
-   </script>
+			
+	</script>
    
     ]]>
   </Content>
