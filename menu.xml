@@ -155,7 +155,7 @@ border-top-right-radius: 5px;
 .cabeceramenu ul li.home {
 	width: 81px;
 }
-.cabeceramenu ul li.iniciate {
+.cabeceramenu ul li.iniciate{
 	width: 180px;
 }
 
