@@ -155,6 +155,9 @@ border-top-right-radius: 5px;
 .cabeceramenu ul li.home {
 	width: 81px;
 }
+.cabeceramenu ul li.home {
+	width: 120px;
+}
 
 .cabeceramenu ul li .enlace span{
 	padding-top: 1.286em;
