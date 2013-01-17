@@ -225,7 +225,7 @@ margin-top:-19px;
 	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/get-started"  target="_parent">Get started on your NET</a></span></span></li>
 	<li id="googleapps" class="apps"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/google-apps"  target="_parent">Google Apps</a></span></span></li>
 	<li id="trucosyconsejos" class="trucos"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/tips"  target="_parent">Tips</a></span></span></li>
-	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/movilidad"  target="_parent">Mobility</a></span></span></li> 
+	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/mobility"  target="_parent">Mobility</a></span></span></li> 
 	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/casos-de-exito"  target="_parent" >Case Studies</a></span></span></li> 
   </ul>    
 </div>
@@ -245,7 +245,7 @@ margin-top:-19px;
 		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/get-started";}
 		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/google-apps";}
 		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/tips";}
-		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/movilidad";}
+		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/mobility";}
 		else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/casos-de-exito";}
 		
 		return false;
