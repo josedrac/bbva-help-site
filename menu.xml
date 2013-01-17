@@ -244,7 +244,7 @@ margin-top:-19px;
 		if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/home";}
 		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/get-started";}
 		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/google-apps";}
-		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/trucosyconsejos";}
+		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/tips";}
 		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/movilidad";}
 		else if(destination=='exito'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/casos-de-exito";}
 		
