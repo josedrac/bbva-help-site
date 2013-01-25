@@ -210,7 +210,7 @@
             {
                 var html = "";
                 var strLink = "";    
-                var urlbase = "https://sites.google.com/a/bbva.com/portaldeayuda";
+                var urlbase = "https://sites.google.com/a/bbva.com/help-site";
                 if ((VarEnlace1Texto!="")&&(VarEnlace1URL!=""))
                 {   if(VarEnlace1URL.indexOf('http')!= -1) {
                     var strLink = devuelveEnlace(VarEnlace1URL);
