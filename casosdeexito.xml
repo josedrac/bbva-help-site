@@ -101,7 +101,7 @@
       #titleVideo, 
       #titleVideo2 {
 	  color:#0078D2;
-	  font-family:BBVA Web Book;
+	  font-family:BBVA Web Book, Arial;
 	  font-size:18px;
 	  width:238px;
 	  margin: 0 0 20px 7px;
@@ -110,7 +110,7 @@
 	  #titleVideo a,
 	  #titleVideo2 a{
 	  color:#0078D2;
-	  font-family:BBVA Web Book;
+	  font-family:BBVA Web Book, Arial;
 	  font-size:18px;
 	  width:238px;
 	  font-weight: normal;
@@ -121,7 +121,7 @@
 	  #textVideo2{
 		color:#434A58;
 		font-size:12px;
-		font-family:arial;
+		font-family:Arial;
 		height:80px;
 		width:269px;
 		margin-top: 15px;
@@ -165,7 +165,7 @@
 			margin-right: 0;
 			text-decoration:none;
 			color:#FFF;
-			font-family: BBVA Web Medium;
+			font-family: BBVA Web Medium, Arial;
 			font-size:12px;
 			margin-left:-16px;
 			width:90px;
@@ -242,7 +242,7 @@
        clear:both;
        display:block;
        margin-left:15px;
-       font-family: BBVA Web Book;
+       font-family: BBVA Web Book, Arial;
 		color:#0078D2;
 		float:left;
 		margin-top:-2px;
@@ -250,7 +250,7 @@
 
     .bloqueSiguiente{
             display:block;
-          font-family: BBVA Web Book;
+          font-family: BBVA Web Book, Arial;
           float:left;
           margin-top:-2px;
 		padding-left:10px;
