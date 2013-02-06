@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="etiquetasBasico.xml"
+  <ModulePrefs title="etiquetasBasico.xml english version"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -406,7 +406,7 @@
 				
 				if(filas<1)
 					{
-						html += '<p class="text">No hay ningún contenido con este Nivel.</p>';
+						html += '<p class="text">No hay ningï¿½n contenido con este Nivel.</p>';
 					}
 				else
 					{               
