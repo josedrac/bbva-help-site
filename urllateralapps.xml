@@ -94,7 +94,7 @@
 	      var prefs = new _IG_Prefs();
 	      var urlTable = prefs.getString("tablequeryurl");
 		  var html="";
-	      html +='<div class=\"titulo\">Preguntas Frecuentes</div>';
+	      html +='<div class=\"titulo\">fAQs</div>';
 		  html +='<ul id=\"botonera\">'; 
 	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/preguntas-frecuentes-contactos'>Contactos</a></li>";
 	  
