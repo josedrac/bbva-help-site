@@ -109,7 +109,7 @@
 				var opts = {dataType:'jsonp'};		
 				var query = new google.visualization.Query(urlTable, opts);	
 				
-				var querytosend = "select max(C),D,H where C like '%"+subseccion+"%'group by D,H";
+				var querytosend = "select  C,max(D),max(H),A where C like '%"+subseccion+"%' group by C,A";
 				
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
@@ -126,8 +126,7 @@
 				html +='<div class=\"titulo\">' + subseccion + '</div>';
 				html +='<ul id=\"botonera\">'; 
 				for(var i=0;i<filas;i++){
-				     
-				    alert("data.getValue(i,1): " + data.getValue(i,1)); 
+
 				    html +="<li><a target='_parent' href='"+data.getValue(i,2)+"'>"+data.getValue(i,1)+"</a></li>";
 					
 					}
