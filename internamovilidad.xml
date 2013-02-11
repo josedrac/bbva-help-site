@@ -343,17 +343,30 @@ top: 2px;
 			   data = response.getDataTable();	
 			   var filas = data.getNumberOfRows();
 			   var html = "";
+			   
+			   alert("data.getValue(0,2): " + data.getValue(0,2));
+			   
 			   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,2)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
 			
 			   html += "<div id='comboVideo'>";
 			   html += "<div id='video-container'><div id='infoVideo'>";
+			   
+			   alert("data.getValue(0,4): " + data.getValue(0,4));
+			   
 			   html += "<div id='textVideo'>"+data.getValue(0,4)+"</div>";
 			   html += "<div id='urlVideo'>";
+			   
+			   alert("data.getValue(0,3): " + data.getValue(0,3));
+			   
 			   html += "<embed src='"+data.getValue(0,3)+"' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='620' height='427'></embed></div>";
 			   html +="</div></div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
 			   html +="<span class='titleguia'>Índice de esta guía</span>";
 			   html += "<ul class='guias'>";
 			   for(var i=0; i<filas; i++){
+			   
+			   alert("data.getValue(i,5): " + data.getValue(i,5));
+			   alert("data.getValue(i,6): " + data.getValue(i,6));
+			   
 			   html +="<li><a target='_blank' href='"+data.getValue(i,5)+"'>"+data.getValue(i,6)+"  <img class='savePDF' alt='Descargar PDF' title='Descargar PDF' src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/icopdf.png'></a></li>";
 			   }
 			   html +="</ul>";
