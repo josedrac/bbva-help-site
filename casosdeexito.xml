@@ -338,14 +338,33 @@
 			   html += "<div id='comboVideo'>";
 			   html += "<div id='video-container'><div id='infoVideo'>";
 			   html += "<div id='urlVideo'>";
+			   
+			   alert("data.getValue(i,10): " + data.getValue(i,10));
+			   
 			   if(data.getValue(i,10)!=""){
 			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
 			   }else{
+			   
+			   alert("data.getValue(i,11): " + data.getValue(i,11));
+			   
 			   html += "<img src='"+data.getValue(i,11)+"'></img></div>";
 				}
+				
+			   alert("data.getValue(i,0): " + data.getValue(i,0));
+			   alert("data.getValue(i,1): " + data.getValue(i,1));
+				
 			   html += "<div id='titleVideo'><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/caso-de-exito?exito="+data.getValue(i,0)+"'>"+data.getValue(i,1)+"</a></div>";
+			   
+			   alert("data.getValue(i,2): " + data.getValue(i,2));
+			   
 			   html += "<div id='dateVideo'>"+data.getValue(i,2).toString()+" - </div>";
+			   
+			   alert("data.getValue(i,5): " + data.getValue(i,5));
+			   
 			   html += "<div id='userVideo'> "+data.getValue(i,5)+"</div>";
+			   
+			   alert("data.getValue(i,3): " + data.getValue(i,3));
+			   
 			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";
 			   html += "<button type='button' id='allcontent'><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/caso-de-exito?exito="+data.getValue(i,0)+"'>Learn more</a></button>";
 			   html +="</div></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
