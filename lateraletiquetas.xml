@@ -43,33 +43,33 @@
 	  /* @group fonts */
 @font-face {
 	font-family: 'BBVA Web Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'BBVA Web Book';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'BBVA Web Medium';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -77,11 +77,11 @@
 
 @font-face {
 	font-family: 'BBVA Office Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-light/office-light.svg#BBVA Office Light') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-light/office-light.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-light/office-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-light/office-light.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-light/office-light.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-light/office-light.svg#BBVA Office Light') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -90,11 +90,11 @@
 
 @font-face {
 	font-family: 'BBVA Office Book';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/office-book/office-book.svg#BBVA Office Book') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-book/office-book.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-book/office-book.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-book/office-book.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-book/office-book.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/office-book/office-book.svg#BBVA Office Book') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -113,33 +113,33 @@
 
 @font-face {
 	font-family: 'Stag Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-light/stag-light.svg#Stag Light') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-light/stag-light.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-light/stag-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-light/stag-light.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-light/stag-light.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-light/stag-light.svg#Stag Light') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Stag';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.eot?#iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag/stag.svg#Stag') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag/stag.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag/stag.eot?#iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag/stag.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag/stag.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag/stag.svg#Stag') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Stag Medium';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.svg#Stag Medium') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/stag-medium/stag-medium.svg#Stag Medium') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -191,7 +191,7 @@
 	}
 	
 	#mediumlevel{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 	height:25px;
 	width:110px;
 	text-align:center;
@@ -208,7 +208,7 @@
 	
 	}
 	#lowlevel{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/basico.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/basico.png')no-repeat;
 	width:109px;
 	height:25px;
 	text-align:center;
@@ -226,7 +226,7 @@
 
 	}
 	#highlevel{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
 	width:132px;
 	height:25px;
 	text-align:center;
@@ -241,7 +241,7 @@
 	text-decoration:none;
 	}
 	#trucos{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/trucooconsejo.png')no-repeat;
 	float:left;
 	width: 175px;
 	height:25;
@@ -256,7 +256,7 @@
 	text-decoration:none;
 	}
 	#stepbystep{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
 	width: 152px;
 	height:25;
 	float:left;
@@ -272,7 +272,7 @@
 	text-decoration:none;
 	}
 	#referencia{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
 	width: 105px;
 	height:25;
 	float:left;
@@ -293,7 +293,7 @@
 	padding-top:20px;
 	}
 	#ayuda{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/medio.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/medio.png')no-repeat;
 	width: 81px;
 	height:25;
 	float:left;
@@ -309,7 +309,7 @@
 	text-decoration:none;
 	}
 	#exitos{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/avanzado.png')no-repeat;
 	width: 129px;
 	height:25;
 	float:left;
@@ -333,7 +333,7 @@
 	}
 	
 	#formatTruco{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
 	width: 200px;
 	height:25;
 	float:left;
@@ -348,7 +348,7 @@
 	text-decoration:none;
 	}
 	#formatPaso{
-	background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
+	background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/tiposdown.png')no-repeat;
 	width: 175px;
 	height:25;
 	float:left;
@@ -365,7 +365,7 @@
 </style>
 
 
-<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/bbcode2html.js"></script>
+<script type="text/javascript" src="https://bbva-help-site.googlecode.com/svn/trunk/bbcode2html.js"></script>
 <div id="content"><div id="titlebox"></div>
 <div id="niveles"><div id="mediumlevel"></div><div id="lowlevel"></div>
 <div id="highlevel"></div>
@@ -611,7 +611,7 @@
   <Content type="html" view="configuration" preferred_height="480">
 
 <![CDATA[
-<script type="text/javascript" src="https://bbvaportaldeayuda.googlecode.com/svn/trunk/editorbbcode.js"></script>
+<script type="text/javascript" src="https://bbva-help-site.googlecode.com/svn/trunk/editorbbcode.js"></script>
 <style type="text/css">
     
 	table td {

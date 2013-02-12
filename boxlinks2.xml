@@ -39,11 +39,11 @@
         <style>
           @font-face {
              font-family: 'BBVA Web Book';
-             src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
-             src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
-                url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
-                url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
-                url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
+             src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
+             src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
+                url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
+                url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
+                url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
              font-style: normal;
              font-weight: normal;
           }    
@@ -108,61 +108,61 @@
 		}  
         
         ul li.op1 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op2 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op3 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op4 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op5 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op6 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op7 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op8 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op9 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
         }
         ul li.op10 {
-        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/spriteIcons.png');        	
+        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/spriteIcons.png');        	
         	background-position: -0px -0px; 
         	width: 23px; 
         	height: 23px;
@@ -233,7 +233,7 @@
             {
                 var html = "";
                 var strLink = "";    
-                var urlbase = "https://sites.google.com/a/bbva.com/portaldeayuda";
+                var urlbase = "https://sites.google.com/a/bbva.com/help-site";
                 if ((VarEnlace1Texto!="")&&(VarEnlace1URL!=""))
                 {   if(VarEnlace1URL.indexOf('http')!= -1) {
                     var strLink = devuelveEnlace(VarEnlace1URL);
