@@ -22,33 +22,33 @@
         <style>
        @font-face {
 	font-family: 'BBVA Web Light';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'BBVA Web Book';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'BBVA Web Medium';
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
+	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }      
@@ -74,7 +74,7 @@
 					color:#333;
 					text-decoration:none;
 					font:16px BBVA Web Book;
-					background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/contacto.png')no-repeat;
+					background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/contacto.png')no-repeat;
 					padding-left:40px;
 					background-position-y:2px;
 					}
@@ -207,7 +207,7 @@ margin-right: 0;
 }
 	
 .btn.white i.arrow-right, .btn.info i.arrow-right {
-background: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/buttons-icon.png") no-repeat -26px -50px;
+background: url("https://bbva-help-site.googlecode.com/svn/trunk/img/buttons-icon.png") no-repeat -26px -50px;
 width: .7em;
 height: 1.2em;
 margin-top: .4em;
@@ -219,7 +219,7 @@ margin-top: .4em;
 .btn.white.active i.arrow-right,
 .btn.info:hover i.arrow-right,
 .btn.info.hover i.arrow-right{
-	background: url("https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/buttons-icon.png") no-repeat -50px -50px;
+	background: url("https://bbva-help-site.googlecode.com/svn/trunk/img/buttons-icon.png") no-repeat -50px -50px;
 	width:.7em;
 	height:1.2em;
 	margin-top:.4em;
