@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="videoResume.xml"
+  <ModulePrefs title="videoResume.xml english versio"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -14,13 +14,13 @@
 <UserPref name="tagVideo" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo" display_name="Title Video" required="true" />
 <UserPref name="textVideo" display_name="Text Video" required="true" />
-<UserPref name="urlsabermas" display_name="Url Saber más" required="true" />
+<UserPref name="urlsabermas" display_name="Url Learn more" required="true" />
 <UserPref name="urlVideo" display_name="Url Video" required="true" />
 <UserPref name="imgTag2" display_name="Image Tag Video2" required="true" />
 <UserPref name="tagVideo2" display_name="Tag Video" required="true" />  
 <UserPref name="titleVideo2" display_name="Title Video" required="true" />
 <UserPref name="textVideo2" display_name="Text Video" required="true" />
-<UserPref name="urlsabermas2" display_name="Url Saber más 2" required="true" />
+<UserPref name="urlsabermas2" display_name="Url Learn more 2" required="true" />
 <UserPref name="urlVideo2" display_name="Url Video" required="true" />	
 
 
@@ -76,7 +76,7 @@
             </tr>
 			<tr>       
                 <td>
-				 Url to Saber más: <input type="text" size="100" id="urlsabermas" value="__UP_urlsabermas__"   onchange="registra('urlsabermas')"/>   
+				 Url to Learn more: <input type="text" size="100" id="urlsabermas" value="__UP_urlsabermas__"   onchange="registra('urlsabermas')"/>   
 
 					
                 </td>
@@ -113,7 +113,7 @@
             </tr>
 			<tr>       
                 <td>
-				 Url to Saber más2: <input type="text" size="100" id="urlsabermas2" value="__UP_urlsabermas2__"   onchange="registra('urlsabermas2')"/>   
+				 Url to Learn more2: <input type="text" size="100" id="urlsabermas2" value="__UP_urlsabermas2__"   onchange="registra('urlsabermas2')"/>   
 
 					
                 </td>
@@ -487,7 +487,7 @@
 		 document.getElementById("tagVideo").innerHTML = "<img src='"+imgTag+"'/>"+ tagVideo;
 		 document.getElementById("titleVideo").innerHTML ="<a target='_parent' href='"+urlsabermas+"'>"+ titleVideo +"</a>";
 		 document.getElementById("textVideo").innerHTML = textVideo;
-		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2'>Saber más</button>";
+		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2'>Learn more</button>";
 		 document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
 		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
@@ -495,7 +495,7 @@
 		 document.getElementById("tagVideo2").innerHTML = "<img src='"+imgTag2+"'/>"+ tagVideo2;
 		 document.getElementById("titleVideo2").innerHTML = "<a target='_parent' href='"+urlsabermas2+"'>"+ titleVideo2 +"</a>";
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
-		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent3'>Saber más</button>";
+		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent3'>Learn more</button>";
 		 document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
 		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
 		 return false;
