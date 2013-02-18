@@ -259,8 +259,6 @@
 	 
 	 document.getElementById('nivel').innerHTML = tagAux;
 	 
-	 alert("tagAux: " + tagAux);
-	 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 function loadVisualizationAPI() 
 			{
