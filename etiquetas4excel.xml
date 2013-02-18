@@ -496,6 +496,8 @@ function mostrarTipos()
     muestra +="<div class='titular1'>By content type</div>";
 	for (var i=0; i<aux1.length; i++)
 	{
+		alert("aux1[i]: " + aux1[i]);
+		
 		if(aux1[i]!="")
 		{	if((auxiliar.indexOf('=')!=-1)&&(urlparameters.indexOf(aux1[i])!=-1)){
 			muestra +='<div class="selected">';
