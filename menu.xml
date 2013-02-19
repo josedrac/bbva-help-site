@@ -293,18 +293,22 @@ margin-top:-19px;
 	var userAgent = navigator.userAgent.toLowerCase();
 	var test="";
 	
+	
 	if (userAgent.indexOf('msie 8')>-1)
 	{
+		alert("IE8");
 		var testValue = "Estas utilizando internet explorer 8 ->" + userAgent;
 		var test = "msie 8";
 	}
 	else if (userAgent.indexOf('msie 7')>-1)
 		{
+			alert("IE7");
 			var testValue = "Estas utilizando internet explorer 7 ->" + userAgent;
 			var test = "msie 7";
 		}
 		else if (userAgent.indexOf('msie 6')>-1)
 		{
+			alert("IE6");
 			var testValue = "Estas utilizando internet explorer 6 ->" + userAgent;
 			var test = "msie 6";
 		}
@@ -318,6 +322,7 @@ margin-top:-19px;
 		{
 			if(test=='msie 6' || test=='msie 7' || test=='msie 8')
 			{
+				alert("Redirigiendo a la pagina de error");
 				window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/navegador-no-compatible";
 			}
 			return false;
