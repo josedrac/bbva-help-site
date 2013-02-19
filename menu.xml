@@ -320,6 +320,7 @@ margin-top:-19px;
 	
 	function redirect()
 		{
+			alert("test: " + test);
 			if(test=='msie 6' || test=='msie 7' || test=='msie 8')
 			{
 				alert("Redirigiendo a la pagina de error");
