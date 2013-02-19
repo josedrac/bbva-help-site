@@ -306,7 +306,7 @@ function redirect()
 	{
 		if(test=='msie 6' || test=='msie 7' || test=='msie 8')
 		{
-			window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/navegador-no-compatible";
+			window.parent.location.href="https://sites.google.com/a/bbva.com/portaldeayuda/navegador-no-compatible";
 		}
 		return false;
 	}
