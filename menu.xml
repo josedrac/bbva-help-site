@@ -290,8 +290,10 @@ else if (userAgent.indexOf('msie 7')>-1)
 	{
 		var testValue = "Estas utilizando internet explorer 7 ->" + userAgent;
 		var test = "msie 7";
-	}*/
-	else if (userAgent.indexOf('msie 6')>-1)
+	}
+	else */
+	
+	if (userAgent.indexOf('msie 6')>-1)
 	{
 		var testValue = "Estas utilizando internet explorer 6 ->" + userAgent;
 		var test = "msie 6";
