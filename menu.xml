@@ -200,6 +200,37 @@ margin-top:-19px;
 }
 
 </style>
+<!--[if IE]>
+		
+	<style type="text/css">
+	
+	.cabeceramenu{
+		color: #fff;
+		width: 96em;
+		height: 5.1em;
+		margin-top: 0px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		background-image: url('https://bbvaportaldeayuda-testsie.googlecode.com/svn/trunk/img/fondo-menu.png');
+		position: relative;
+		font-family: BBVA Web Light, Arial;
+		font-weight: normal;
+		text-align: center;
+		}
+	
+	#googleapps a,
+	#inicio a,
+	#trucosyconsejos a,
+	#movilidad a,
+	#exito a{
+	 color:#fff;
+	}
+	
+	
+</style>
+		
+<![endif]-->
 <body onload="redirect()">
 <div class="bloqueEnlaces">
 Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site/" class="enlaceMenu">| English</a>
