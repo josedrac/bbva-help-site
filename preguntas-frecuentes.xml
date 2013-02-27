@@ -143,6 +143,56 @@
 	
 	</style>
 	
+	<!--[if IE 7]>
+		
+		<style type="text/css"> 
+			
+			.flecha{
+				border: 0px;
+			}
+			
+			#iniciate a{
+				display: block;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+				padding-top: 0px;
+   			}
+				
+		</style>
+		
+	<![endif]-->
+	
+	<!--[if IE 8]>
+				
+		<style type="text/css"> 
+			
+			.flecha{
+				border: 0px;
+			}
+				
+			#iniciate a{
+				display: block;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+				padding-top: 0px;
+   			}
+   			
+		</style>
+		
+	<![endif]-->
+	
+	<!--[if IE 9]>
+				
+		<style type="text/css"> 
+			
+			.flecha{
+				border: 0px;
+			}
+
+		</style>
+		
+	<![endif]-->
+	
 <div id="iniciate"></div>
 	
    <script type="text/javascript">
@@ -151,34 +201,34 @@
 	 
 	 var html="";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/preguntas-frecuentes-contactos'>Contactos</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/preguntas-frecuentes-contactos'>Contactos<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	  
-     html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/como-puedo-ver-mis-carpetas-en-nokia'>Cómo puedo ver mis carpetas en Nokia</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+     html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/como-puedo-ver-mis-carpetas-en-nokia'>Cómo puedo ver mis carpetas en Nokia<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/etiquetas-preguntas-frecuentes'>Etiquetas</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/etiquetas-preguntas-frecuentes'>Etiquetas<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/gmail-preguntas-frecuentes'>GMail</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/gmail-preguntas-frecuentes'>GMail<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/google-calendar-preguntas-frecuentes'>Google Calendar</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/google-calendar-preguntas-frecuentes'>Google Calendar<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/google-docs-preguntas-frecuentes'>Google Docs</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/google-docs-preguntas-frecuentes'>Google Docs<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/interactuar-con-los-correos-preguntas-frecuentes'>Interactuar con los correos</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/interactuar-con-los-correos-preguntas-frecuentes'>Interactuar con los correos<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/migracion-a-gmail-preguntas-frecuentes'>Migración a GMail</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/migracion-a-gmail-preguntas-frecuentes'>Migración a GMail<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/modo-de-funcionamiento-de-gmail'>Modo de funcionamiento de GMail</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/modo-de-funcionamiento-de-gmail'>Modo de funcionamiento de GMail<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
-	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/outlook-vs-gmail-preguntas-frecuentes'>Outlook vs. GMail</a><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/>";
+	 html += "<a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/outlook-vs-gmail-preguntas-frecuentes'>Outlook vs. GMail<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/flecha.png' class='flecha'/></a>";
 	 html += "<img src='https://bbva-help-site.googlecode.com/svn/trunk/img/linepagetitledown.png' class='lineitem'/>";
 	 
 					
