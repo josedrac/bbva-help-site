@@ -89,6 +89,30 @@
 					}  
 	
 	</style>
+	
+	<!--[if IE 7]>
+						
+		<style type="text/css"> 
+			.titulo{
+				background: #f5f7f8;	
+            }	
+				
+		</style>
+		
+	<![endif]-->
+	
+	<!--[if IE 8]>
+					
+		<style type="text/css"> 
+			
+			.titulo{
+				background: #f5f7f8;	
+            }	
+   		
+		</style>
+		
+	<![endif]-->
+	
 <script type="text/javascript" src="https://bbva-help-site.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
 <div id="content_div" class="caja"></div>
