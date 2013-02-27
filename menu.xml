@@ -217,7 +217,121 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 </div>
 </body>
 <script type="text/javascript">
+if( typeof document.querySelector == "undefined") {
+    document.querySelectorAll = function(sel) {
+        var sels = sel.split(","),
+            run = function(node,selector) {
+                var sel = selector.split(/[ >]+/), com = selector.match(/[ >]+/g) || [], s, c, ret = [node], nodes, l, i, subs, m, j, check, x, w, ok,
+                    as;
+                com.unshift(" ");
+                while(s = sel.shift()) {
+                    c = com.shift();
+                    if( c) c = c.replace(/^ +| +$/g,"");
+                    nodes = ret.slice(0);
+                    ret = [];
+                    l = nodes.length;
+                    subs = s.match(/[#.[]?[a-z_-]+(?:='[^']+'|="[^"]+")?]?/gi);
+                    m = subs.length;
+                    for( i=0; i<l; i++) {
+                        if( subs[0].charAt(0) == "#") ret = [document.getElementById(subs[0].substr(1))];
+                        else {
+                            check = c == ">" ? nodes[i].children : nodes[i].getElementsByTagName("*");
+                            if( !check) continue;
+                            w = check.length;
+                            for( x=0; x<w; x++) {
+                                ok = true;
+                                for( j=0; j<m; j++) {
+                                    switch(subs[j].charAt(0)) {
+                                    case ".":
+                                        if( !check[x].className.match(new RegExp("\\b"+subs[j].substr(1)+"\\b"))) ok = false;
+                                        break;
+                                    case "[":
+                                        as = subs[j].substr(1,subs[j].length-2).split("=");
+                                        if( !check[x].getAttribute(as[0])) ok = false;
+                                        else if( as[1]) {
+                                            as[1] = as[1].replace(/^['"]|['"]$/g,"");
+                                            if( check[x].getAttribute(as[0]) != as[1]) ok = false;
+                                        }
+                                        break;
+                                    default:
+                                        if( check[x].tagName.toLowerCase() != subs[j].toLowerCase()) ok = false;
+                                        break;
+                                    }
+                                    if( !ok) break;
+                                }
+                                if( ok) ret.push(check[x]);
+                            }
+                        }
+                    }
+                }
+                return ret;
+            }, l = sels.length, i, ret = [], tmp, m, j;
+        for( i=0; i<l; i++) {
+            tmp = run(this,sels[i]);
+            m = tmp.length;
+            for( j=0; j<m; j++) {
+                ret.push(tmp[j]);
+            }
+        }
+        return ret;
+    };
+    document.querySelector = function(sel) {
+        var ret = this.querySelectorAll(sel);
+        if( ret.length > 0) return ret[0];
+        else return null;
+    };
+    if( typeof HTMLElement != "undefined") {
+        HTMLElement.prototype.querySelector = document.querySelector;
+        HTMLElement.prototype.querySelectorAll = document.querySelectorAll;
+    }
+    
+}
 
+
+
+
+
+
+
+function getElementsByClassName(className) {
+if (document.getElementsByClassName) { 
+  return document.getElementsByClassName(className); }
+else { return document.querySelectorAll('.' + className); } 
+
+}
+
+if (!Array.prototype.indexOf) {
+    Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+        "use strict";
+        if (this == null) {
+            throw new TypeError();
+        }
+        var t = Object(this);
+        var len = t.length >>> 0;
+        if (len === 0) {
+            return -1;
+        }
+        var n = 0;
+        if (arguments.length > 0) {
+            n = Number(arguments[1]);
+            if (n != n) { // shortcut for verifying if it's NaN
+                n = 0;
+            } else if (n != 0 && n != Infinity && n != -Infinity) {
+                n = (n > 0 || -1) * Math.floor(Math.abs(n));
+            }
+        }
+        if (n >= len) {
+            return -1;
+        }
+        var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+        for (; k < len; k++) {
+            if (k in t && t[k] === searchElement) {
+                return k;
+            }
+        }
+        return -1;
+    }
+} 
 	document.getElementById('home').onclick = function(){ Go('home');};
 	document.getElementById('inicio').onclick = function() {Go('inicio');};
 	document.getElementById('googleapps').onclick = function() {Go('googleapps');};
@@ -244,34 +358,49 @@ Español <a target="_parent" href="https://sites.google.com/a/bbva.com/help-site
 	   
 		var parametros = gadgets.util.getUrlParameters()["parent"];
 	
-		if (parametros.indexOf("home")!=-1 || parametros == "https://sites.google.com/a/bbva.com/help-site/")
-		{   			
-			document.getElementsByClassName("homefirst")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("homefirst")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";	
+		if (parametros.indexOf("home")!=-1 || parametros == "https://sites.google.com/a/bbva.com/portaldeayuda/")
+		{   
+			var tabhomefirst = getElementsByClassName('homefirst');
+			tabhomefirst[0].style['border-bottom-left-radius']="5px";
+			tabhomefirst[0].style['border-top-left-radius']="5px";
+			tabhomefirst[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabhomefirst[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";			
+			
 		}
 		if(parametros.indexOf("case-studies")!=-1){
-			document.getElementsByClassName("exito")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("exito")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			var tabexito = getElementsByClassName('exito');
+			tabexito[0].style['border-bottom-right-radius']="5px";
+			tabexito[0].style['border-top-right-radius']="5px";
+			tabexito[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabexito[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			
 		
 		}
 		if(parametros.indexOf("google-apps")!=-1){
-			document.getElementsByClassName("apps")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("apps")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+		    var tabapps = getElementsByClassName('apps');
+			tabapps[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabapps[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			
 		
 		}
 		if(parametros.indexOf("tips")!=-1){
-			document.getElementsByClassName("trucos")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("trucos")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			var tabtrucos = getElementsByClassName('trucos');
+			tabtrucos[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabtrucos[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			
 		
 		}
 		if((parametros.indexOf("get-started")!=-1)&&(parametros.indexOf("google-apps")==-1)){
-			document.getElementsByClassName("iniciate")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("iniciate")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			var tabiniciate = getElementsByClassName('iniciate');
+			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabiniciate[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
 		
 		}
 		if(parametros.indexOf("mobility")!=-1){
-			document.getElementsByClassName("movilidad")[0].style.backgroundColor = "rgb(0, 80, 152)";
-			document.getElementsByClassName("movilidad")[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+		    var tabmovilidad = getElementsByClassName('movilidad');
+			tabmovilidad[0].style.backgroundColor = "rgb(0, 80, 152)";
+			tabmovilidad[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
+			
 		
 		}
 	}
