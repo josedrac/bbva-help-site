@@ -287,6 +287,22 @@
 		padding-right:2px;
 	}
 	</style>
+		<!--[if IE]>
+		
+		<style type="text/css">
+		
+			.checkpage img,
+			.checkpage1 img,
+			.bloqueAnterior img,
+			.bloqueSiguiente img{
+				border: 0;
+			}	
+			button{
+					background: #0079C1;
+				}	
+		</style>
+			
+	<![endif]-->
 	
 <div id="listportales"></div>	
 		
