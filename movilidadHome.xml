@@ -207,6 +207,18 @@
 	}
 	
 	</style>
+	
+	<!--[if IE 9]>
+		
+		<style type="text/css">
+			.linedowntitle{	
+				margin-top:3px;
+			}
+			
+		</style>
+			
+	<![endif]-->
+	
 	<body onload="cargaCompleta()">	
 <div id="content">
 	<div id="titleHome"><h2>Mobility</h2></div>
