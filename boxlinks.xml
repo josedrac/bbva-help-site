@@ -145,43 +145,7 @@
 		
 	<style type="text/css">
 	
-ul li.op1 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 15px; 
-        }
-        ul li.op2 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -55px; 
-        }
-        ul li.op3 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -125px;  
-        }
-        ul li.op4 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -195px; 
-        }
-        ul li.op5 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -269px; 
-        }
-        ul li.op6 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -410px;  
-        }
-        ul li.op7 {
-        background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -481px; 
-                }
-        ul li.op8 {
-        	
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -552px;  
 
-        }
-        ul li.op9 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -560px;  
-        }
-        ul li.op10 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -850px; 
-        }  
-	 ul li.op9 {
-			border: 0;
-			padding-bottom: 11px;
-			padding-top: 17px;
-		} 
 </style>
 		
 <![endif]-->
