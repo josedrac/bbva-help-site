@@ -243,7 +243,7 @@
 			window.parent.location.href = destination;
 			return false;
 			} 
-			 function Go2(destination){
+			function Go2(destination){
 
 			window.open(destination,'_blank');
 			return false;
@@ -358,7 +358,7 @@
 					VarEnlace9URL = urlbase+VarEnlace9URL;
 					var strLink = devuelveEnlace(VarEnlace9URL);
 					}
-                    html+='<li class="op9" onclick="Go(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9" ' + strLink + ' title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
+                    html+='<li class="op9" onclick="Go(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9"' + strLink + ' title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
 					
                 }
                  if ((VarEnlace10Texto!="")&&(VarEnlace10URL!=""))
@@ -369,7 +369,7 @@
 					VarEnlace10URL = urlbase+VarEnlace10URL;
 					var strLink = devuelveEnlace(VarEnlace10URL);
 					}
-                    html+='<li class="op10" onclick="Go(\''+VarEnlace10URL+'\')">&nbsp;&nbsp;<a class="link10" ' + strLink + ' title=\"' + VarEnlace10Texto + '\"  >' + VarEnlace10Texto + '</a></li>';
+                    html+='<li class="op10" onclick="Go(\''+VarEnlace10URL+'\')">&nbsp;&nbsp;<a class="link10"' + strLink + ' title=\"' + VarEnlace10Texto + '\"  >' + VarEnlace10Texto + '</a></li>';
                 }
                 return html;
             }    
