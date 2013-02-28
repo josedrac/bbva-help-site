@@ -141,21 +141,7 @@
         }               
         </style>
 		
-    <!--[if IE]>
-		
-	<style type="text/css">
-	.caja{
-			border: 1px solid #DDE3EA;
-            border-radius: 2px;
-            -ms-border-radius: 2px;
-            width: 298px;
-            clear: both;
-			margin-top:15px;
-		}
-
-</style>
-		
-<![endif]-->
+    
         <div id="content_div" class="caja"></div>
 
         <script type="text/javascript">
