@@ -140,7 +140,34 @@
         	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -700px; 
         }               
         </style>
-    
+    <!--[if IE]>
+		
+	<style type="text/css">
+	
+	.titulo{
+			border-bottom: 1px solid  #DDE3EA;
+			background: #ffffff;
+			font-size: 16px;
+			font-family: BBVA Web Book, Arial;
+			color: #333333;
+			padding-left: 18px;
+			padding-left: 18px;
+			padding-top: 14px;
+			padding-bottom: 15px;
+		}
+		
+		.caja{
+			border: 1px solid #DDE3EA;
+            border-radius: 2px;
+            width: 298px;
+            clear: both;
+			margin-top:15px;
+		}
+	
+	
+</style>
+		
+<![endif]-->
         <div id="content_div" class="caja"></div>
 
         <script type="text/javascript">
