@@ -177,7 +177,11 @@ ul li.op1 {
         ul li.op10 {
         	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -850px; 
         }  
-	
+	 ul li.op9 {
+			border: 0;
+			padding-bottom: 11px;
+			padding-top: 17px;
+		} 
 </style>
 		
 <![endif]-->
