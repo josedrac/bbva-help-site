@@ -38,11 +38,11 @@
         <style>
           @font-face {
              font-family: 'BBVA Web Book';
-             src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
-             src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
-                url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
-                url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
-                url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
+             src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
+             src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
+                url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
+                url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
+                url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
              font-style: normal;
              font-weight: normal;
           }   
@@ -102,81 +102,80 @@
          	padding-left: 30px;
 			vertical-align: 3px;
 			text-decoration: none;
-         	font: 12px Arial;
+         	 font-size: 12px; font-family: Arial; 
          	font-weight: bold;
 			color: #0073C9;
 		}  
 				        
   		ul li.op1 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 15px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px 15px; 
         }
         ul li.op2 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -55px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -55px; 
         }
         ul li.op3 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -125px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -125px;  
         }
         ul li.op4 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -195px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -195px; 
         }
         ul li.op5 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -269px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -269px; 
         }
         ul li.op6 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -410px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -410px;  
         }
         ul li.op7 {
-        background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -481px; 
+        background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -481px; 
                 }
         ul li.op8 {
         	
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -552px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat 1px -552px;  
 
         }
         ul li.op9 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -626px;  
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -626px;  
         }
         ul li.op10 {
-        	background: url('http://bbva-help-site.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -700px; 
+        	background: url('http://bbvaportaldeayuda.googlecode.com/svn/trunk/img/result.png') no-repeat -0px -700px; 
         }               
         </style>
-		
     
         <div id="content_div" class="caja"></div>
 
         <script type="text/javascript">
-		 if (!Array.prototype.indexOf) {
-		Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
-        "use strict";
-        if (this == null) {
-            throw new TypeError();
-        }
-        var t = Object(this);
-        var len = t.length >>> 0;
-        if (len === 0) {
+			if (!Array.prototype.indexOf) {
+				Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+				"use strict";
+				if (this == null) {
+					throw new TypeError();
+				}
+			var t = Object(this);
+			var len = t.length >>> 0;
+			if (len === 0) {
             return -1;
-        }
-        var n = 0;
-        if (arguments.length > 0) {
+			}
+			var n = 0;
+			if (arguments.length > 0) {
             n = Number(arguments[1]);
             if (n != n) { // shortcut for verifying if it's NaN
                 n = 0;
             } else if (n != 0 && n != Infinity && n != -Infinity) {
                 n = (n > 0 || -1) * Math.floor(Math.abs(n));
-            }
-        }
-        if (n >= len) {
+				}
+			}
+			if (n >= len) {
             return -1;
-        }
-        var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
-        for (; k < len; k++) {
+			}
+			var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+			for (; k < len; k++) {
             if (k in t && t[k] === searchElement) {
                 return k;
             }
         }
         return -1;
-    }
-} 
+		}
+	}
             var html="";
             // Obtener userprefs
             var prefs = new gadgets.Prefs();            
@@ -217,7 +216,7 @@
 			window.parent.location.href = destination;
 			return false;
 			} 
-			function Go2(destination){
+			 function Go2(destination){
 
 			window.open(destination,'_blank');
 			return false;
@@ -244,7 +243,7 @@
             {
                 var html = "";
                 var strLink = "";    
-                var urlbase = "https://sites.google.com/a/bbva.com/help-site";
+                var urlbase = "https://sites.google.com/a/bbva.com/portaldeayuda";
                 if ((VarEnlace1Texto!="")&&(VarEnlace1URL!=""))
                 {   if(VarEnlace1URL.indexOf('http')!= -1) {
                     var strLink = devuelveEnlace(VarEnlace1URL);
@@ -322,7 +321,7 @@
 					VarEnlace8URL = urlbase+VarEnlace8URL;
 					var strLink = devuelveEnlace(VarEnlace8URL);
 					}
-                    html+='<li class="op8" onclick="Go2(\''+VarEnlace8URL+'\')">&nbsp;&nbsp;<a class="link8"   title=\"' + VarEnlace8Texto + '\"  >' + VarEnlace8Texto + '</a></li>';
+                    html+='<li class="op8" onclick="Go2(\''+VarEnlace8URL+'\')">&nbsp;&nbsp;<a class="link8" title=\"' + VarEnlace8Texto + '\"  >' + VarEnlace8Texto + '</a></li>';
                 }
                  if ((VarEnlace9Texto!="")&&(VarEnlace9URL!=""))
                 {    
@@ -332,7 +331,7 @@
 					VarEnlace9URL = urlbase+VarEnlace9URL;
 					var strLink = devuelveEnlace(VarEnlace9URL);
 					}
-                    html+='<li class="op9" onclick="Go(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9"' + strLink + ' title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
+                    html+='<li class="op9" onclick="Go(\''+VarEnlace9URL+'\')">&nbsp;&nbsp;<a class="link9" ' + strLink + ' title=\"' + VarEnlace9Texto + '\"  >' + VarEnlace9Texto + '</a></li>';
 					
                 }
                  if ((VarEnlace10Texto!="")&&(VarEnlace10URL!=""))
@@ -343,7 +342,7 @@
 					VarEnlace10URL = urlbase+VarEnlace10URL;
 					var strLink = devuelveEnlace(VarEnlace10URL);
 					}
-                    html+='<li class="op10" onclick="Go(\''+VarEnlace10URL+'\')">&nbsp;&nbsp;<a class="link10"' + strLink + ' title=\"' + VarEnlace10Texto + '\"  >' + VarEnlace10Texto + '</a></li>';
+                    html+='<li class="op10" onclick="Go(\''+VarEnlace10URL+'\')">&nbsp;&nbsp;<a class="link10" ' + strLink + ' title=\"' + VarEnlace10Texto + '\"  >' + VarEnlace10Texto + '</a></li>';
                 }
                 return html;
             }    
