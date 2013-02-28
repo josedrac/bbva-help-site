@@ -102,7 +102,8 @@
          	padding-left: 30px;
 			vertical-align: 3px;
 			text-decoration: none;
-         	font: 12px Arial;
+         	font: 12px 
+			font-family:Arial;
          	font-weight: bold;
 			color: #0073C9;
 		}  
