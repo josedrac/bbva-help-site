@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-    <ModulePrefs title="lateral Cursos english version"
+    <ModulePrefs title="lateralCursos.xml english version"
         title_url=""
         height=""
         width="300"
@@ -108,7 +108,43 @@
 				        
   		              
         </style>
-    
+    	
+    		<!--[if IE]>
+		  		
+		  		<style type="text/css">
+		  		
+		  			.caja{
+				  		margin-top: 0px;
+				  	}
+				  		
+			  	</style>
+			  		
+			<![endif]-->
+			
+			<!--[if IE 7]>
+
+				<style type="text/css"> 
+							
+					.titulo{
+						background: #F5F7F8
+				    }
+								
+				</style>
+		
+			<![endif]-->
+		
+			<!--[if IE 8]>
+			    	
+				<style type="text/css">  
+							
+					.titulo{
+						background: #F5F7F8
+				    }
+				   			
+				</style>
+				
+			<![endif]-->
+    	
         <div id="content_div" class="caja"></div>
 
         <script type="text/javascript">
