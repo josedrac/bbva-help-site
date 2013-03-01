@@ -243,7 +243,29 @@ cursor: pointer;
 }
         </style>
     
-        
+        <!--[if IE 7]>
+
+			<style type="text/css"> 
+						
+				.btn.white{
+					background: #F5F7F8
+			    }
+							
+			</style>
+		
+		<![endif]-->
+		
+		<!--[if IE 8]>
+		    	
+			<style type="text/css">  
+						
+				.btn.white{
+					background: #F5F7F8
+			    }
+			   			
+			</style>
+			
+		<![endif]-->
         
         <div class="c-aside-otrasOperaciones">
 			<ul id="content_div">
