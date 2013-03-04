@@ -287,13 +287,6 @@
 		padding-right:2px;
 	}
 	
-	@-moz-document url-prefix() { 
-	  
-		#allcontent{
-			padding-left: 4em;
-		}
-	} 
-	
 	</style>
 		<!--[if IE]>
 		
