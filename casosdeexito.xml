@@ -313,11 +313,11 @@
 	<![endif]-->
 	
 	<!--[if IE 9]>
-	
-		#allcontent{
-			padding-left: 4em;
-		}
-	
+		<style type="text/css">
+			#allcontent{
+				padding-left: 4em;
+			}
+		</style>
 	<![endif]-->
 	
 	<script type="text/javascript">
