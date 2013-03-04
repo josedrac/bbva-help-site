@@ -179,24 +179,31 @@
 	}
 	
 	
+	
 	.bloqueAnterior{
             clear:both;
             display:block;
             margin-left:15px;
-            font-family: BBVA Office Book, Arial;
+            font-family: BBVA Web Book;
 			color:#0078D2;
 			float:left;
 			margin-top:-2px;
+			border:none;
+			outline: none;
+			text-decoration:none;
         }
 
     .bloqueSiguiente{
             display:block;
-            font-family: BBVA Office Book, Arial;
+            font-family: BBVA Web Book;
             float:left;
             margin-top:0px;
             padding-left:10px;
 			color:#0078D2;
 			width:64px;
+			border:none;
+			outline: none;
+			text-decoration:none;
         }
 	p.text {	 
             font-size: 0.8em;
@@ -205,19 +212,27 @@
 
   #bloqueEnlaces1 img{
             
-			//margin-left:260px;
+			
 			padding-right:10px;
+			border:none;
+			outline: none;
+			text-decoration:none;
         }
 	#etiquetas{
 	width:651px;
 	}
 	.checkpage{
     margin-top:-5px;
+	border:none;
+	outline: none;
+	text-decoration:none;
 	}	
 	.checkpage1{
     margin-top:-5px;
-	//margin-left:260px;
-	}	
+	border:none;
+	outline: none;
+	text-decoration:none;
+	}		
 	.checkpage a{
 	height:9px;
 	float:left;
@@ -231,6 +246,10 @@
 	padding-top:4px;
 	padding-left:2px;
 	padding-right:2px;
+	}
+	img{
+	border:0px;
+	text-decoration:none;
 	}
 	
 	</style>
