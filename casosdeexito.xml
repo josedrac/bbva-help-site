@@ -315,7 +315,7 @@
 	<!--[if IE 9]>
 		<style type="text/css">
 			#allcontent{
-				padding-left: 4em; 
+				width: 91px; 
 			}
 		</style>
 	<![endif]-->
