@@ -288,7 +288,7 @@
 	}
 	
 	</style>
-		<!--[if IE]>
+	<!--[if IE]>
 		
 		<style type="text/css">
 		
@@ -310,6 +310,14 @@
 			}		
 		</style>
 			
+	<![endif]-->
+	
+	<!--[if IE 9]>
+	
+		#allcontent{
+			padding-left: 4em;
+		}
+	
 	<![endif]-->
 	
 	<script type="text/javascript">
