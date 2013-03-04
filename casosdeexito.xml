@@ -318,8 +318,8 @@
 		
 		if( userAgent.indexOf('firefox/') > -1 )
 		{
-			alert("vamosss2");
-			document.getElementById("allcontent").style.paddingLeft="40"; 
+			//alert("vamosss2");
+			//document.getElementById("allcontent").style.paddingLeft="40"; 
 		}
 		
 	</script>
