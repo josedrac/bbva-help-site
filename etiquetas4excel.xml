@@ -219,18 +219,18 @@
 		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/backBlue2.png') repeat-x;
 		float: left;
 		width: 120px;
-		height: 25px;
+		height: 30px;
 		text-align: left;
-		padding-top: 0px;
+		padding-top: 4px;
 		margin-right: 10px;	
 		font-family:BBVA Web Light, Arial;
 		font-weight: normal;
-		margin-top:0px;
+		margin-top:4px;
 	}	
 	
 	.blockTypes a{
 		width: 120px;
-		height: 25px;
+		height: 30px;
 		font-weight: bold;
 		font-family: Arial;
 		font-size: 12px;
@@ -238,9 +238,6 @@
 		text-decoration: none;		
 		padding:0 5px;
 		font-weight: bold;
-	}
-	.blockFormats{
-	margin-bottom:5px;
 	}
 	.etiquetas, 
 	.tipos, 
