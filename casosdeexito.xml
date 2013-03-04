@@ -318,7 +318,8 @@
 		
 		if( userAgent.indexOf('firefox/') > -1 )
 		{
-			alert("Estas usando firefox");
+			alert("vamosss");
+			document.getElementById("allcontent").style.paddingLeft="4em";
 		}
 		
 	</script>
