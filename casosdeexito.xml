@@ -151,7 +151,6 @@
 			border-radius: .2em;
 			height: 2em;
 			padding-left: 1.4em;
-			-moz-padding-left: 4em;
 			padding-right: 2.4em;
 			float:left;
 			margin-left:10px;
@@ -311,6 +310,13 @@
 		</style>
 			
 	<![endif]-->
+	
+	@-moz-document url-prefix() { 
+	  
+		#allcontent{
+			padding-left: 4em;
+		}
+	}
 	
 <div id="listportales"></div>	
 		
