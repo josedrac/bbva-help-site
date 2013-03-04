@@ -286,6 +286,14 @@
 		padding-left:2px;
 		padding-right:2px;
 	}
+	
+	@-moz-document url-prefix() { 
+	  
+		#allcontent{
+			padding-left: 4em;
+		}
+	}
+	
 	</style>
 		<!--[if IE]>
 		
@@ -310,14 +318,7 @@
 		</style>
 			
 	<![endif]-->
-	
-	@-moz-document url-prefix() { 
-	  
-		#allcontent{
-			padding-left: 4em;
-		}
-	}
-	
+
 <div id="listportales"></div>	
 		
    <script type="text/javascript">
