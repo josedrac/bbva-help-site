@@ -315,22 +315,12 @@
 	<!--[if IE 9]>
 		<style type="text/css">
 			#allcontent{
-				width: 95px; 
+				width: 92px;
+				padding-left: 0px;
+				padding-right: 0px;
 			}
 		</style>
 	<![endif]-->
-	
-	<script type="text/javascript">
-	
-		var userAgent = navigator.userAgent.toLowerCase();
-		
-		if( userAgent.indexOf('firefox/') > -1 )
-		{
-			//alert("vamosss2");
-			//document.getElementById("allcontent").style.paddingLeft="40"; 
-		}
-		
-	</script>
 	
 <div id="listportales"></div>	
 		
