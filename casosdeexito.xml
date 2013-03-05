@@ -313,13 +313,21 @@
 	<![endif]-->
 	
 	<!--[if IE 9]>
+	
 		<style type="text/css">
+		
 			#allcontent{
 				width: 92px;
 				padding-left: 0px;
 				padding-right: 0px;
 			}
+			
+			#userVideo{
+				margin-left:72px;
+			}	
+			
 		</style>
+		
 	<![endif]-->
 	
 <div id="listportales"></div>	
