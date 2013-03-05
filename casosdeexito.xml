@@ -330,6 +330,18 @@
 		
 	<![endif]-->
 	
+	<script type="text/javascript">
+	
+		var userAgent = navigator.userAgent.toLowerCase();
+		
+		if( userAgent.indexOf('firefox/') > -1 )
+		{
+			alert("Usando Firefox");
+			//allcontent
+		}
+		
+	</script>
+	
 <div id="listportales"></div>	
 		
    <script type="text/javascript">
