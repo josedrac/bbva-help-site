@@ -531,26 +531,27 @@
   </script>
   
   	<script type="text/javascript">
-		
+		/*
 		function cargarEstiloAllContentFirefox(){
 		
-			/*
+			
 			document.getElementById("allcontent1").style.paddingLeft="40px";
 			document.getElementById("allcontent2").style.paddingLeft="40px";
 			document.getElementById("allcontent3").style.paddingLeft="40px";
 			document.getElementById("allcontent4").style.paddingLeft="40px";
-			*/
+			
 		}
 		
 		var userAgent = navigator.userAgent.toLowerCase();
 		
 		if( userAgent.indexOf('firefox/') > -1 )
 		{
-			alert("Usando Firefox8");
+			//alert("Usando Firefox8");
 			window.onload = cargarEstiloAllContentFirefox();
 			//document.button.style.paddingLeft="4em";
 			
 		}
+		*/
 		
 	</script>
   
