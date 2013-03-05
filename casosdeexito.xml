@@ -145,7 +145,10 @@
 			color:#DCDCDC;
 		}	
 		
-		#allcontent{
+		#allcontent1,
+		#allcontent2,
+		#allcontent3,
+		#allcontent4{
 			-webkit-border-radius: .2em;
 			-moz-border-radius: .2em;
 			border-radius: .2em;
@@ -158,7 +161,10 @@
 			margin-top:0px;		
 		}
 		
-		 #allcontent a{
+		 #allcontent1 a,
+		 #allcontent2 a,
+		 #allcontent3 a,
+		 #allcontent4 a{
 			float:left;	
 			position: relative;
 			top: -1px;
@@ -196,7 +202,19 @@
 		overflow: visible;
 	}
 	
-	#allcontent:hover{
+	#allcontent1:hover{
+		background: #004C99;
+	}
+	
+	#allcontent2:hover{
+		background: #004C99;
+	}
+	
+	#allcontent3:hover{
+		background: #004C99;
+	}
+	
+	#allcontent4:hover{
 		background: #004C99;
 	}
 	
@@ -316,7 +334,10 @@
 	
 		<style type="text/css">
 		
-			#allcontent{
+			#allcontent1,
+			#allcontent2,
+			#allcontent3,
+			#allcontent4{
 				width: 92px;
 				padding-left: 0px;
 				padding-right: 0px;
@@ -515,9 +536,12 @@
 		
 		if( userAgent.indexOf('firefox/') > -1 )
 		{
-			alert("Usando Firefox5");
+			alert("Usando Firefox7");
 			//document.button.style.paddingLeft="4em";
-			//document.getElementById("allcontent").style.paddingLeft="40px";
+			document.getElementById("allcontent1").style.paddingLeft="40px";
+			document.getElementById("allcontent2").style.paddingLeft="40px";
+			document.getElementById("allcontent3").style.paddingLeft="40px";
+			document.getElementById("allcontent4").style.paddingLeft="40px";
 		}
 		
 	</script>
