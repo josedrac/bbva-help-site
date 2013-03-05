@@ -337,8 +337,8 @@
 		if( userAgent.indexOf('firefox/') > -1 )
 		{
 			alert("Usando Firefox1");
-			document.button.style.paddingLeft="4em"
-			//document.getElementById("allcontent").style.property="value"
+			//document.button.style.paddingLeft="4em"
+			document.getElementById("allcontent").style.paddingLeft="40px";
 		}
 		
 	</script>
