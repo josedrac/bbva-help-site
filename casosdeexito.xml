@@ -330,19 +330,6 @@
 		
 	<![endif]-->
 	
-	<script type="text/javascript">
-	
-		var userAgent = navigator.userAgent.toLowerCase();
-		
-		if( userAgent.indexOf('firefox/') > -1 )
-		{
-			alert("Usando Firefox2");
-			//document.button.style.paddingLeft="4em"
-			document.getElementById("allcontent").style.paddingLeft="40px";
-		}
-		
-	</script>
-	
 <div id="listportales"></div>	
 		
    <script type="text/javascript">
@@ -520,6 +507,20 @@
 	
 
   </script>
+  
+  	<script type="text/javascript">
+	
+		var userAgent = navigator.userAgent.toLowerCase();
+		
+		if( userAgent.indexOf('firefox/') > -1 )
+		{
+			alert("Usando Firefox3");
+			//document.button.style.paddingLeft="4em";
+			document.getElementById("allcontent").style.paddingLeft="40px";
+		}
+		
+	</script>
+  
     ]]>
   </Content>
   
