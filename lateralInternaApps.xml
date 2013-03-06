@@ -96,10 +96,7 @@
 				.titulo{
 					background: #F5F7F8
 	    		}
-         .content_div{
-           position:relative;
-           left: 100px;
-         }
+     
 					
 			</style>
 		
