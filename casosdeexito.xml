@@ -526,7 +526,23 @@
 		    document.getElementById('pagination'+old).src="https://bbva-help-site.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbva-help-site.googlecode.com/svn/trunk/img/paginaHover.png";
 		}	
-	
+		
+		function cargarEstiloAllContentFirefox(){
+		
+			document.getElementById("allcontent1").style.paddingLeft="40px";
+			document.getElementById("allcontent2").style.paddingLeft="40px";
+			document.getElementById("allcontent3").style.paddingLeft="40px";
+			document.getElementById("allcontent4").style.paddingLeft="40px";
+			
+		}
+		
+		var userAgent = navigator.userAgent.toLowerCase();
+		
+		if( userAgent.indexOf('firefox/') > -1 )
+		{
+			alert("Usando Firefox8");
+			cargarEstiloAllContentFirefox();
+		}
 		
   </script>
   
