@@ -176,6 +176,7 @@
 			font-size:12px;
 			margin-left:-16px;
 			width:90px;
+          -moz-padding-end : 20px;
 		}
 	
 	button{
