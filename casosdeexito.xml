@@ -159,6 +159,7 @@
 			margin-left:10px;
 			width:90px;
 			margin-top:0px;		
+             -moz-padding-end : 4em;
 		}
 		
 		 #allcontent1 a,
@@ -552,6 +553,8 @@
 		}
 		*/
 		
+      alert("test1!");
+      
 	</script>
   
     ]]>
