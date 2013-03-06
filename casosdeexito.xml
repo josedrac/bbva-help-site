@@ -305,10 +305,6 @@
 		padding-right:2px;
 	}
 	
-	#learnMore{
-		text-align: center;
-	}
-	
 	</style>
 	<!--[if IE]>
 		
@@ -421,7 +417,7 @@
 			   html += "<div id='userVideo'> "+data.getValue(i,5)+"</div>";
 			   
 			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";
-			   html += "<button type='button' id='allcontent" + contaBotones + "'><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/case-studies/caso-de-exito?exito="+data.getValue(i,0)+"'><div id='learnMore'>Learn more</div></a></button>"; 
+			   html += "<button type='button' id='allcontent" + contaBotones + "'><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/case-studies/caso-de-exito?exito="+data.getValue(i,0)+"'>Learn more</a></button>"; 
 			   html +="</div></div><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/></div>";
 			  
 			   if(pagTotales>1){
@@ -530,7 +526,7 @@
 		    document.getElementById('pagination'+old).src="https://bbva-help-site.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbva-help-site.googlecode.com/svn/trunk/img/paginaHover.png";
 		}	
-		alert("Diego1");
+
   </script>
   
   	<script type="text/javascript">
