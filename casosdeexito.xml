@@ -386,6 +386,8 @@
 			var pagTotales = Math.ceil(filas/3);
 			var pagActual = 1;
 			var html = "";
+      var userAgent = navigator.userAgent.toLowerCase();  
+
 			
 			 if(filas<1)
             {
@@ -420,7 +422,6 @@
 			   
 			   html += "<div id='textVideo'>"+data.getValue(i,3)+"</div>";
          
-       var userAgent = navigator.userAgent.toLowerCase();  
         
 		
 		if( userAgent.indexOf('firefox/') > -1 )
@@ -542,32 +543,10 @@
 
   </script>
   
-  	<script type="text/javascript">
-		/*
-		function cargarEstiloAllContentFirefox(){
+    
 		
-			
-			document.getElementById("allcontent1").style.paddingLeft="40px";
-			document.getElementById("allcontent2").style.paddingLeft="40px";
-			document.getElementById("allcontent3").style.paddingLeft="40px";
-			document.getElementById("allcontent4").style.paddingLeft="40px";
-			
-		}
-		
-		var userAgent = navigator.userAgent.toLowerCase();
-		
-		if( userAgent.indexOf('firefox/') > -1 )
-		{
-			//alert("Usando Firefox8");
-			window.onload = cargarEstiloAllContentFirefox();
-			//document.button.style.paddingLeft="4em";
-			
-		}
-		*/
-		
-      alert("test7!");
-      
-	</script>
+     
+ 
   
     ]]>
   </Content>
