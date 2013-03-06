@@ -22,7 +22,7 @@
 	
     <Content type="html" view="home"><![CDATA[
 	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-   <script> alert("hola!");</script>
+   <script> alert("hola2!");</script>
         <style>
           @font-face {
              font-family: 'BBVA Web Book';
@@ -112,6 +112,8 @@
 			</style>
 			
 		<![endif]-->
+      
+     <script> alert("despues de estilos!");</script>
     	
         <div id="content_div" class="caja"></div>
 
