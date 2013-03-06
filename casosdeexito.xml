@@ -191,7 +191,6 @@
 		border-radius: .3em;
 		font-size: 10px;
 		text-align: center;
-		text-align: -moz-center;
 		vertical-align: middle;
 		height: 3em;
 		padding-left: .9em;
