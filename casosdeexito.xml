@@ -191,6 +191,7 @@
 		border-radius: .3em;
 		font-size: 10px;
 		text-align: center;
+		text-align: -moz-center;
 		vertical-align: middle;
 		height: 3em;
 		padding-left: .9em;
@@ -526,7 +527,7 @@
 		    document.getElementById('pagination'+old).src="https://bbva-help-site.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbva-help-site.googlecode.com/svn/trunk/img/paginaHover.png";
 		}	
-		alert("oe");
+		alert("David");
   </script>
   
   	<script type="text/javascript">
