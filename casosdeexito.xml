@@ -425,7 +425,7 @@
 		
 		if( userAgent.indexOf('firefox/') > -1 )
 		{
-       html += "<button type='button' id='allcontent" + contaBotones + "' style='padding-left:6em;'><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/case-studies/caso-de-exito?exito="+data.getValue(i,0)+"'>Learn more</a></button>"; 
+       html += "<button type='button' id='allcontent" + contaBotones + "' style='padding-left:80px;'><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/case-studies/caso-de-exito?exito="+data.getValue(i,0)+"'>Learn more</a></button>"; 
       }else{
        html += "<button type='button' id='allcontent" + contaBotones + "'><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/case-studies/caso-de-exito?exito="+data.getValue(i,0)+"'>Learn more</a></button>"; 
       }
@@ -565,7 +565,7 @@
 		}
 		*/
 		
-      alert("test6!");
+      alert("test7!");
       
 	</script>
   
