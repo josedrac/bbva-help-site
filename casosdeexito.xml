@@ -203,6 +203,11 @@
 		overflow: visible;
 	}
 	
+	@-moz-document url-prefix()
+{
+  button {  padding-left: 4em; }
+}
+	
 	#allcontent1:hover{
 		background: #004C99;
 	}
