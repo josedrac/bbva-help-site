@@ -540,7 +540,7 @@
 		
 		if( userAgent.indexOf('firefox/') > -1 )
 		{
-			alert("Usando Firefox8");
+			alert("Usando Firefox9");
 			cargarEstiloAllContentFirefox();
 		}
 		
