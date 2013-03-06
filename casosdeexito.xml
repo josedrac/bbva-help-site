@@ -529,10 +529,10 @@
 		
 		function cargarEstiloAllContentFirefox(){
 		
-			document.getElementById("allcontent1").style.paddingLeft="40px";
-			document.getElementById("allcontent2").style.paddingLeft="40px";
-			document.getElementById("allcontent3").style.paddingLeft="40px";
-			document.getElementById("allcontent4").style.paddingLeft="40px";
+			document.getElementById('allcontent1').style.paddingLeft="40px";
+			document.getElementById('allcontent2').style.paddingLeft="40px";
+			document.getElementById('allcontent3').style.paddingLeft="40px";
+			document.getElementById('allcontent4').style.paddingLeft="40px";
 			
 		}
 		
