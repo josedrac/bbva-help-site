@@ -530,7 +530,7 @@
 		    document.getElementById('pagination'+old).src="https://bbva-help-site.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbva-help-site.googlecode.com/svn/trunk/img/paginaHover.png";
 		}	
-		alert("David");
+		alert("Diego");
   </script>
   
   	<script type="text/javascript">
