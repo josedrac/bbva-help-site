@@ -191,6 +191,7 @@
 		border-radius: .3em;
 		font-size: 10px;
 		text-align: center;
+		text-align: -moz-center;
 		vertical-align: middle;
 		height: 3em;
 		padding-left: .9em;
@@ -304,30 +305,6 @@
 		padding-left:2px;
 		padding-right:2px;
 	}
-	
-	<script type="text/javascript">
-		
-		function cargarEstiloAllContentFirefox(){
-		
-			
-			document.getElementById("allcontent1").style.paddingLeft="40px";
-			document.getElementById("allcontent2").style.paddingLeft="40px";
-			document.getElementById("allcontent3").style.paddingLeft="40px";
-			document.getElementById("allcontent4").style.paddingLeft="40px";
-			
-		}
-		
-		var userAgent = navigator.userAgent.toLowerCase();
-		
-		if( userAgent.indexOf('firefox/') > -1 )
-		{
-			alert("Usando Firefox10");
-			cargarEstiloAllContentFirefox();
-			//document.button.style.paddingLeft="4em";
-			
-		}
-		
-	</script>
 	
 	</style>
 	<!--[if IE]>
