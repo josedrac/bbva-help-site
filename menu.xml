@@ -260,7 +260,6 @@ margin-top:-19px;
 </div>
 </body>
 <script type="text/javascript">
-alert("cambios cogidos");
 if( typeof document.querySelector == "undefined") {
     document.querySelectorAll = function(sel) {
         var sels = sel.split(","),
