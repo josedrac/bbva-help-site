@@ -387,8 +387,8 @@
 			   html +='<div id="citaAutor">"'+data.getValue(i,4)+'"</div>';
 			   html +="<div id='autorydpt'>"+data.getValue(i,5)+" - "+data.getValue(i,7)+"</div>";
 			   html +="</div>";
-			   html +="<div id='reto'><span class='titlesection'>Reto:</span>"+data.getValue(i,8)+"</div>";
-			   html +="<span class='titlesection' >Resultados:</span>";
+			   html +="<div id='reto'><span class='titlesection'>Challenge:</span>"+data.getValue(i,8)+"</div>";
+			   html +="<span class='titlesection' >Results:</span>";
 			   html +="<div id='resultados'>";
 			   html +="<ul>";
 				for(var j=0;j<resultados.length;j++){
@@ -396,7 +396,7 @@
 				 }
 			   html +="</ul>";
 			   html +="</div>";
-			   html +="<span class='titlesection'>Beneficios:</span>";
+			   html +="<span class='titlesection'>Benefits:</span>";
 			   html +="<div id='beneficios'>";
 			   html +="<ul>";
 				for(var x=0;x<beneficios.length;x++){
