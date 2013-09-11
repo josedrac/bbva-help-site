@@ -368,7 +368,7 @@
 
 			   html += "<img src='"+data.getValue(0,3)+"' width='360' height='427' /></div>";
 			   html +="</div></div></div><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
-			   html +="<span class='titleguia'>Índice de esta guía</span>";
+			   html +="<span class='titleguia'>Index of this guide</span>";
 			   html += "<ul class='guias'>";
 			   for(var i=0; i<filas; i++){
 			   html +="<li><a target='_blank' href='"+data.getValue(i,5)+"'>"+data.getValue(i,6)+"  <img class='savePDF' alt='Descargar PDF' title='Descargar PDF' src='https://bbva-help-site.googlecode.com/svn/trunk/img/icopdf.png'></a></li>";
