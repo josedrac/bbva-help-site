@@ -118,13 +118,13 @@
 	      var prefs = new _IG_Prefs();
 	      var urlTable = prefs.getString("tablequeryurl");
 		  var html="";
-	      html +='<div class=\"titulo\">fAQs</div>';
+	      html +='<div class=\"titulo\">FAQs</div>';
 		  html +='<ul id=\"botonera\">'; 
-	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/preguntas-frecuentes-contactos'>Contactos</a></li>";
+	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/preguntas-frecuentes-contactos'>Contacts</a></li>";
 	  
-          html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/como-puedo-ver-mis-carpetas-en-nokia'>Cómo puedo ver mis carpetas en Nokia</a></li>";
+          html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/como-puedo-ver-mis-carpetas-en-nokia'>How to see my folders with a Nokia device</a></li>";
 	 
-	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/etiquetas-preguntas-frecuentes'>Etiquetas</a></li>";
+	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/etiquetas-preguntas-frecuentes'>Labels</a></li>";
 	 
 	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/gmail-preguntas-frecuentes'>Gmail</a></li>";
 	 
@@ -132,14 +132,14 @@
 	 
 	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/google-docs-preguntas-frecuentes'>Google Docs</a></li>";
 	 
-	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/interactuar-con-los-correos-preguntas-frecuentes'>Interactuar con los correos</a></li>";
+	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/interactuar-con-los-correos-preguntas-frecuentes'>Interacting with emails</a></li>";
 	    
 	 
-	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/migracion-a-gmail-preguntas-frecuentes'>Migración a GMail</a></li>";
+	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/migracion-a-gmail-preguntas-frecuentes'>Migration to Gmail</a></li>";
 	 
-	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/modo-de-funcionamiento-de-gmail'>Modo de funcionamiento de GMail</a></li>";
+	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/modo-de-funcionamiento-de-gmail'>Gmail operation mode</a></li>";
 	 
-	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/outlook-vs-gmail-preguntas-frecuentes'>Outlook vs. GMail</a></li>";
+	      html += "<li><a target='_parent' href='https://sites.google.com/a/bbva.com/help-site/preguntas-frecuentes/outlook-vs-gmail-preguntas-frecuentes'>Outlook versus Gmail</a></li>";
 		  html +="</ul>";		
 		  document.getElementById("content_div").innerHTML = html;
 
