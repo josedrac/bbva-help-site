@@ -58,7 +58,7 @@ img {border:none;}
 <body onload="cargaCompleta()">
 <div class="container">
 <div class="header">
-			<h1 class="title">Apps de BBVA</h1>
+			<h1 class="title">BBVA Apps</h1>
 			<ul class="oslist">
 				<li><img src="https://bbva-help-site.googlecode.com/svn/trunk/fase2/img/iphone.png">        
 				<span>Iphone</span></li>
