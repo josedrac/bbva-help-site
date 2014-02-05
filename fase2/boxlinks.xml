@@ -162,15 +162,11 @@
 		<![endif]-->
 
 		<!--[if IE 8]>
-
-			<style type="text/css">
-
+            <style type="text/css">
 				.titulo{
 					background: #F5F7F8
 	    		}
-
 			</style>
-
 		<![endif]-->
         <div id="content_div" class="caja">
             <div class="titulo">Google Apps</div>
