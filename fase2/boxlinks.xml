@@ -177,7 +177,7 @@
                 <li class="gplus" onclick="Go2('https://support.google.com/plus/#topic=3049661')">
                     <a class="link1" title="Go to Google+ [new window]">Google+</a>
                 </li>
-                <li class="hangouts" onclick="Go2('https://support.google.com/drive/?hl=es')">
+                <li class="hangouts" onclick="Go2('https://support.google.com/drive/?hl=en')">
                     <a class="link1" title="Go to hangOuts [new window]">HangOuts</a>
                 </li>
                 <li class="groups" onclick="Go2('https://support.google.com/groups/#topic=9216')">

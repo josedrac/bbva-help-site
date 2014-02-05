@@ -121,14 +121,9 @@
 		<![endif]-->
 		
 <body onload="cargaCompleta()">	
-<!--<div id="textMovilidad">Guías de configuración, según dispositivo: </div>-->
-<!--<div id="movilidad">Guías de configuración, según dispositivo:
- <select  onchange="devicesCountry(this.options[this.selectedIndex].value)" id="paises"></select>
-</div>-->
 <div id="content_div" class="caja"></div>	
 </body>
    <script type="text/javascript">
-   	 //console.log(5);
      var gadgetHelper = null;
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
@@ -164,7 +159,7 @@
 			return dataDC.getValue(row, FIELDS.id);
 		}
 		this.getHref = function(row){
-			return 'https://sites.google.com/a/bbva.com/portaldeayuda/movilidad/movil?dispositivo='+this.getId(row);
+			return 'https://sites.google.com/a/bbva.com/help-site/mobility/mobile?device='+this.getId(row);
 		}
 		this.getNumberOfRows = function(){
 			return dataDC.getNumberOfRows();
