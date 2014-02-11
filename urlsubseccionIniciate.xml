@@ -93,6 +93,7 @@
 	 var prefs = new _IG_Prefs();
 	 var urlTable = prefs.getString("_table_query_url");
 	 var subseccion = prefs.getString("subseccion"); 
+	 console.log("subseccion: "+subseccion);
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
 	 //console.log('break');
 	  function loadVisualizationAPI() 
@@ -116,6 +117,7 @@
 	  function handleQueryResponse(response)
 	        {
 				data = response.getDataTable();	
+				console.log("data: "+data);
 				var filas = data.getNumberOfRows();
 				var html="";
 				
