@@ -94,7 +94,7 @@
 	 var urlTable = prefs.getString("_table_query_url");
 	 var subseccion = prefs.getString("subseccion"); 
 	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
-	 
+	 console.log('break');
 	  function loadVisualizationAPI() 
 			{
 				google.load("visualization", "1", {"packages": ["table"]});
