@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="singleVideo.xml english version"
+  <ModulePrefs title="singleVideo.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -24,21 +24,21 @@
 			
 			@font-face {
 				font-family: 'BBVA Web Light';
-				src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-				src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-					url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-					url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-					url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+				src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+				src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+					url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+					url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+					url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
 				font-style: normal;
 				font-weight: normal;
 			}
 			@font-face {
 				font-family: 'BBVA Web Medium';
-				src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-				src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-					url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-					url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-					url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+				src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
+				src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+					url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+					url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+					url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
 				font-style: normal;
 				font-weight: normal;
 			}
@@ -73,11 +73,11 @@
 			-moz-border-radius: .2em;
 			border-radius: .2em;
 			height: 1.75em;
-			padding-left: .9em;
+			padding-left: .7em;
 			padding-bottom:2px;
 			float:left;
 			margin-right:10px;
-			width:94px;
+			width:90px;
 			margin-top:0px;
 			font-family: BBVA Web Medium, Arial;
 			font-size:12px;	
@@ -123,10 +123,13 @@
 					background: #0079C1;
 				}
 				#titleVideo{
-					padding-bottom: 11px;
+					padding-bottom: 11px; 
+				}
+				#urlLink{
+					padding-left: 0.8em;
 				}
 			</style>
-
+			
 		<![endif]-->
 		
 		<!--[if IE 8]>
@@ -148,6 +151,7 @@
 				#urlLink a{
 					padding-top:2px;			
 				}
+				
 			</style>
 			
 		<![endif]-->
@@ -156,13 +160,15 @@
 	
 	<div id="video-container">
 		<div id="titleVideo"></div>
-		<div id="urlVideo"></div>
+		<div id="containerVideo"></div>
+		
 		<div id="tagVideo"></div>
         <div id="boton"/>
 	</div>
 	 
 	
 	<script type="text/javascript">
+		//console.debug('v1 singleVideo.xml');
 		var gadgetHelper = null;
 		var prefs = new gadgets.Prefs();
 	 
@@ -173,9 +179,11 @@
 	 
 		document.getElementById("tagVideo").innerHTML = tagVideo;
 		document.getElementById("titleVideo").innerHTML = titleVideo;
-		document.getElementById("boton").innerHTML = '<button type="button" id="urlLink" onclick="javascript:Go(\''+urlLink+'\')">Learn more</button>';   //'<a target="_parent" href="' + urlLink + '">Learn more</a>';
-		document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';   //'<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed>';
-  	    
+		document.getElementById("boton").innerHTML = '<button type="button" id="urlLink" onclick="javascript:Go(\''+urlLink+'\')">Saber más</button>';   //'<a target="_parent" href="' + urlLink + '">Saber más</a>';
+		if (urlVideo!="")
+		{
+			document.getElementById("containerVideo").innerHTML = '<div id="urlVideo"><iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';   //'<embed src="'+urlVideo+'" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="302" height="201" ></object> </embed></div>';
+  	    }
 		function Go(destination){
 	    window.parent.location.href = destination;
 	    return false;
