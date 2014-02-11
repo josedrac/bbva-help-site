@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="iniciateInterna.xml english version"
+  <ModulePrefs title="iniciateInterna.xml"
     description=""
-    author_affiliation="Capgemini">
+    author_affiliation="SopraUX">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+	<UserPref name="_table_query_url" default_value="https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0ApZ6EoQT3skrdHMyNFVoWHpfR2piNzdyUkxEbVVtSmc" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 		
  <Content type="html">
     <![CDATA[
@@ -18,33 +18,33 @@
 	  /* @group fonts */
 @font-face {
 	font-family: 'BBVA Web Light';
-	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
-	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-light/web-light.svg#BBVA Web Light') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'BBVA Web Book';
-	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
-	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-book/web-book.svg#BBVA Web Book') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'BBVA Web Medium';
-	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
-	src:url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
-		url('https://bbva-help-site.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot');
+	src:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.eot?iefix') format("embedded-opentype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.woff') format("woff"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.ttf') format("truetype"),
+		url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/fonts/web-medium/web-medium.svg#BBVA Web Medium') format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -59,7 +59,7 @@
 	#titlecomboVideo h2{
 	
 	color:#0078D2;
-	font-family:BBVA Web Light, BBVA Web, Arial, sans-serif;
+	font-family:BBVA Web Light,  Arial;
 	font-size:22px;
 	margin:9px 0px 10px 28px;
 	font-weight: normal;
@@ -123,25 +123,25 @@
 	  #textVideo{
 	    color:#0065B7;
 		font-size:11px;
-		font-family:BBVA Web Medium, Arial, sans-serif;
+		font-family:BBVA Web Medium, Arial;
 		height:40px;
 		width:620px;
 		margin-top: 15px;
 		margin-left: -5px;
 		padding:5px 5px;
 		float:left;
-		background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
 	  }
 	  #textVideo2{
 		color:#0065B7;
 		font-size:11px;
-		font-family:BBVA Web Medium, Arial, sans-serif;
+		font-family:BBVA Web Medium, Arial;
 		height:40px;
 		width:620px;
 		margin-top: 15px;
 		margin-left: 7px;
 		float:left;
-		background:url('https://bbva-help-site.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
+		background:url('https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/addinfo.png')no-repeat;
 	    }
 	#infoVideo{
 	float:left;
@@ -304,41 +304,33 @@
 				
 				
 			}
+		
+
 		function handleQueryResponse(response) 
 		{
 		
 		   data = response.getDataTable();	
 		   var html = "";
-		   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
-		
+		   html += "<div id='titlecomboVideo'><h2>"+data.getValue(0,1)+"</h2></div><img src='https://bbvaportaldeayuda.googlecode.com/svn/trunk/img/lineborder.png' class='linetitle'/>";
+		   
 		   html += "<div id='comboVideo'>";
 		   html += "<div id='video-container'><div id='infoVideo'>";
 		   html += "<div id='textVideo'>"+data.getValue(0,3)+"</div>";
 		   html += "<div id='urlVideo'>";
-		  // console.debug('data.getValue(0,2) '+data.getValue(0,2));
-		   //html += '<iframe frameborder="0" style="border:1px solid #AAA; width:620px; height:427px;" src="'+data.getValue(0,2)+'"></iframe>'; //"<embed src='"+data.getValue(0,2)+"'  width='620' height='427'</embed></div>";
-		   html += "<iframe allowScriptAccess='always' frameborder='0' src='"+data.getValue(0,2)+"'  width='620' height='427'></iframe></div>";
-		   // html +="</div></div></div><img src='https://bbva-help-site.googlecode.com/svn/trunk/img/lineborder.png' class='linevideo'/>";
-		  // html +="<div id='emailTo'>&iquest;Alg&uacute;n error? Por favor, <a  target='_parent' href='#' onclick='SendGmail()'>env&iacute;a un correo</a> describiendo el error encontrado. Muchas gracias por ayudarnos a mejorar.</div>";		   
+		   if(data.getValue(0,11)=="Other"){
+		   html +="<iframe src='"+data.getValue(0,2)+"' allowScriptAccess='always' frameborder='0' width='620' height='427'></iframe>";
+
+
+		   } else{
+		   		html += "<object width='620' height='427' data='"+data.getValue(0,2)+"'>" +
+		   			"<param name='video' value='"+data.getValue(0,2)+"'></param>" +
+		   			"<param name='wmode' value='transparent'></param>" + 
+		   			"<iframe src='"+data.getValue(0,2)+"' allowScriptAccess='always' frameborder='0' width='620' height='427'></iframe>" +
+		   			"</object></div>";		  
+		   }
+		   
 		   document.getElementById('listportales').innerHTML = html;				
 		}
-    
-
-			/*	function SendGmail(){
-				
-				//window.open = ("https://mail.google.com/mail/?view=cm&fs=1&to="+emailTo,"send mail");
-				var to = emailTo;
-				var subject ='Error en Portal de Ayuda';
-				var str = 'https://mail.google.com/mail/?view=cm&fs=1&to='+to+'&su='+subject;
-				//window.parent.location.href = str;
-				
-				window.open(str,'_blank','send mail');
-				//window.parent.location.href = aux;
-				//window.parent.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
-				//window.open(gadgets.util.getUrlParameters()["parent"],'_parent','Video');
-				
-				return false;
-				}*/
 
 
   </script>
