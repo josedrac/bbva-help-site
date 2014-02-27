@@ -599,6 +599,8 @@
 	return false;
 	}
 
+	console.log('sopra');
+
  </script>
     ]]>
   </Content>
