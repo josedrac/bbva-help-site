@@ -594,8 +594,6 @@
 	return false;
 	}
 
-	console.log('sopra');
-
 	//Load
 	 cargaVideo();
 	 function delayRender(){
