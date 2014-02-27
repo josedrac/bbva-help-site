@@ -231,7 +231,8 @@
 		width:610px;
 		height:4px;
 		display:block;
-		margin-bottom:23px;
+		margin-bottom: 20px;
+		padding-top: 25px;	
 	}
 	
 	.sites-embed-align-left-wrapping-off{
@@ -296,7 +297,11 @@
 	.checkpage1{
     margin-top:-5px;
 	margin-left:260px;
+	}
+	.youtubeIframe{
+			display:none;
 	}	
+		
 	
 	.checkpage a,
 	.checkpage1 a{
@@ -408,7 +413,7 @@
 			   html += "<div id='urlVideo'>";
 			   
 			   if(data.getValue(i,10)!=""){
-			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' ></iframe></div>";
+			   html += "<iframe src='"+data.getValue(i,10)+"'  allowScriptAccess='always' frameborder='0' class='youtubeIframe'></iframe></div>";
 			   }else{
 			   
 			   html += "<img src='"+data.getValue(i,11)+"'></img></div>";
@@ -538,7 +543,21 @@
 
 		    document.getElementById('pagination'+old).src="https://bbva-help-site.googlecode.com/svn/trunk/img/pagina.png";
 		    document.getElementById('pagination'+pagina).src="https://bbva-help-site.googlecode.com/svn/trunk/img/paginaHover.png";
-		}	
+		}
+		//delay loading 
+		delayRender();
+	    function delayRender(){
+	    	window.setTimeout('showIframes()',2000);	
+	    }
+	 	function showIframes() {
+	 		//console.log('debugg');
+		 	var iframes =document.getElementsByClassName('youtubeIframe').length;
+
+		 	for (var i=0;i<iframes;i++)
+			{ 
+			document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
+			}	 	
+	 	}		
 
   </script>
   
