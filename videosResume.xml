@@ -141,8 +141,7 @@
  </Content>
   <Content type="html" charset="UTF-8">
     <![CDATA[
-	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-	  <head>
+	<script src="https://www.google.com/jsapi" type="text/javascript"></script>	  
 		<style type="text/css">
 		  /* @group fonts */
 			@font-face {
@@ -420,6 +419,10 @@
 				margin: 5px auto 5px 0;
 				width: 650px;
 			}
+			.youtubeIframe{
+				display:none;
+			}
+		
 			
 		</style>
 		
@@ -511,11 +514,7 @@
 			</style>
 		
 		<![endif]-->
-		
-		</head>
-	
-	
-<body onload="cargaCompleta()">
+
 <div id="titlecomboVideo"></div>
 <img src="https://bbva-help-site.googlecode.com/svn/trunk/img/lineborder.png" class="linetitle"/>
 <div id="comboVideo">
@@ -541,7 +540,6 @@
 	 <img src="https://bbva-help-site.googlecode.com/svn/trunk/img/lineborder.png" class="linevideoLast"/>
 	 <button type="button" id="allcontent">See all</button>
 </div>
-</body>
 	
  <script type="text/javascript">
  
@@ -579,7 +577,7 @@
 		 document.getElementById("textVideo").innerHTML = textVideo;
 		 document.getElementById("sabermas").innerHTML  = "<button type='button' id='allcontent2'>Learn more</button>";
 		 document.getElementById("allcontent2").onclick = function(){ Go(urlsabermas);};
-		 document.getElementById("urlVideo").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
+		 document.getElementById("urlVideo").innerHTML = '<iframe class="youtubeIframe" allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo+'"></iframe>';    //'<embed src="'+urlVideo+'"  allowScriptAccess="always" width="302" height="201" > </embed>';
 		
 		 
 		 document.getElementById("tagVideo2").innerHTML = "<img src='"+imgTag2+"'/>"+ tagVideo2;
@@ -587,12 +585,9 @@
 		 document.getElementById("textVideo2").innerHTML = textVideo2;
 		 document.getElementById("sabermas2").innerHTML  ="<button type='button' id='allcontent3'>Learn more</button>";
 		 document.getElementById("allcontent3").onclick = function(){ Go(urlsabermas2);};
-		 document.getElementById("urlVideo2").innerHTML = '<iframe allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
-		 return false;
-	}
-	function cargaCompleta()
-	{
-		cargaVideo();
+		 document.getElementById("urlVideo2").innerHTML = '<iframe class="youtubeIframe" allowScriptAccess="always" frameborder="0" style="border:1px solid #AAA; width:302px; height:201px;" src="'+urlVideo2+'"></iframe>';      // <embed src="'+urlVideo2+'"  allowScriptAccess="always" width="302" height="201" > </embed>;
+		 
+		 return delayRender();
 	}
 	function Go(destination){
 	window.parent.location.href = destination;
@@ -600,6 +595,21 @@
 	}
 
 	console.log('sopra');
+
+	//Load
+	 cargaVideo();
+	 function delayRender(){
+	 	window.setTimeout("showIframes()",2500);
+	 }	 
+	 function showIframes() {
+	 	//console.log('firstvideo');
+	 	var iframes =document.getElementsByClassName('youtubeIframe').length;
+	 	for (var i=0;i<iframes;i++)
+		{ 
+		document.getElementsByClassName('youtubeIframe')[i].style.display='block';	
+		}
+	 	
+	 }	
 
  </script>
     ]]>
