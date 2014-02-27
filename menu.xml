@@ -251,7 +251,7 @@ margin-top:-19px;
   <ul> 
   
 	<li id="home" class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/help-site/home"   target="_parent"  title="home"/></li>
-	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/get-started"  target="_parent">HPD</a></span></span></li>
+	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/hpd"  target="_parent">HPD</a></span></span></li>
 	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/mobility"  target="_parent">Mobility</a></span></span></li>
 	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/case-studies"  target="_parent" >Case Studies</a></span></span></li>
 	<li id="trucosyconsejos" class="trucos"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/tips"  target="_parent">Tips</a></span></span></li>
@@ -385,7 +385,7 @@ if (!Array.prototype.indexOf) {
 	function Go(destination)
 	{
 		if(destination=='home'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/home";}
-		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/get-started";}
+		else if(destination=='inicio'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/hpd";}
 		else if(destination=='googleapps'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/google-apps";}
 		else if(destination=='trucosyconsejos'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/tips";}
 		else if(destination=='movilidad'){window.parent.location.href="https://sites.google.com/a/bbva.com/help-site/mobility";}
@@ -433,7 +433,7 @@ if (!Array.prototype.indexOf) {
 			
 		
 		}
-		if((parametros.indexOf("get-started")!=-1)&&(parametros.indexOf("google-apps")==-1)){
+		if((parametros.indexOf("get-started")!=-1) || (parametros.indexOf("hpd")!=-1) &&(parametros.indexOf("google-apps")==-1)){
 			var tabiniciate = getElementsByClassName('iniciate');
 			tabiniciate[0].style.backgroundColor = "rgb(0, 80, 152)";
 			tabiniciate[0].style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5) inset";
