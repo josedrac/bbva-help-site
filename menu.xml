@@ -251,8 +251,8 @@ margin-top:-19px;
   <ul> 
   
 	<li id="home" class="homefirst"><a class="enlace" href="https://sites.google.com/a/bbva.com/help-site/home"   target="_parent"  title="home"/></li>
-	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/hpd"  target="_parent">HPD</a></span></span></li>
-	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/mobility"  target="_parent">Mobility</a></span></span></li>
+	<li id="inicio" class="iniciate" ><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/hpd"  target="_parent">HPD web</a></span></span></li>
+	<li id="movilidad" class="movilidad"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/mobility"  target="_parent">HPD mobile</a></span></span></li>
 	<li id="exito" class="exito"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/case-studies"  target="_parent" >Case Studies</a></span></span></li>
 	<li id="trucosyconsejos" class="trucos"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/tips"  target="_parent">Tips</a></span></span></li>
 	<li id="googleapps" class="apps"><span class="enlace" tabindex="0"><span><a href="https://sites.google.com/a/bbva.com/help-site/google-apps"  target="_parent">Google Apps</a></span></span></li>	
